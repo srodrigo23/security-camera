@@ -1,5 +1,6 @@
 import socket
 import time
+import numpy as np
 
 from node.camera_stream import CameraStream
 from comunication.image_sender import ImageSender
