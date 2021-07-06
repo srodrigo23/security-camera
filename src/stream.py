@@ -19,7 +19,7 @@ def stream(tcp):
     while True:
         image = node_cam.read()
         image = resize(image, width=320) #resize image
-        image = np.dstack([image, image, image])
+        # image = np.dstack([image, image, image]) # dont work's
         sender.send_image(node_name, image)
         print(f"Frame sent : {i}")
         i=i+1
