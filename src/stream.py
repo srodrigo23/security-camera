@@ -23,6 +23,4 @@ def stream(tcp):
         sender.send_image(node_name, image)
         print(f"Frame sent : {i}")
         i=i+1
-        if keyboard.is_pressed('q'):
-            break
 stream(tcp)
