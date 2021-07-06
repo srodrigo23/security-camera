@@ -21,5 +21,5 @@ def resize(image,
         # dimensions
         r = width / float(w)
         dim = (width, int(h * r))
-    resized = cv2.resize(image, dim, interpolation=inter)
+    resized = cv2.resize(image, dim) #, interpolation=inter)
     return resized
