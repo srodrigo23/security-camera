@@ -4,7 +4,7 @@ import time
 from node.camera_stream import CameraStream
 from comunication.image_sender import ImageSender
 
-tcp = 'tcp://192.168.43.98:5555'
+tcp = 'tcp://192.168.100.8:5555'
 
 def stream(tcp):
     sender = ImageSender(connect_to=tcp)
