@@ -1,6 +1,6 @@
 import socket
 import time
-import numpy as np
+# import numpy as np
 
 from node.camera_stream import CameraStream
 from comunication.image_sender import ImageSender
@@ -18,7 +18,7 @@ def stream(tcp):
     i = 0
     while True:
         image = node_cam.read()
-        image = resize(image, width=320) #resize image
+        # image = resize(image, width=320) #resize image
         # image = np.dstack([image, image, image]) # dont work's
         sender.send_image(node_name, image)
         print(f"Frame sent : {i}")
