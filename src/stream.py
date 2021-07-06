@@ -3,6 +3,7 @@ import time
 
 from node.camera_stream import CameraStream
 from comunication.image_sender import ImageSender
+from utils import resize
 
 tcp = 'tcp://192.168.100.8:5555'
 
