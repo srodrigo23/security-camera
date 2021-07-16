@@ -7,7 +7,7 @@ if sys.version_info >= (3, 0):
 else:
     from Queue import Queue
 
-class WebCamStream():
+class StreamWebCam():
     def __init__(self, 
                 src, 
                 queueSize=128):

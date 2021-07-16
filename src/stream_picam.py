@@ -4,7 +4,7 @@ from picamera import PiCamera
 from threading import Thread
 import cv2
 
-class PiCameraStream():
+class StreamPiCamera():
     
     def __init__(self, 
                  resolution=(320, 240), 

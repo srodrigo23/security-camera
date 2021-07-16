@@ -1,7 +1,7 @@
 import zmq
 import numpy as np
 
-from .serializing import SerializingContext
+from serializing import SerializingContext
 
 class ImageSender():
     
