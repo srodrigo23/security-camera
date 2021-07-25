@@ -5,9 +5,7 @@ from serializing import SerializingContext
 
 class ImageSender():
     
-	def __init__(self, 
-              	connect_to='tcp://127.0.0.1:5555', 
-                REQ_REP = True):
+	def __init__(self, connect_to='tcp://127.0.0.1:5555', REQ_REP = True):
      
 		if REQ_REP == True: 
       		# REQ/REP mode, this is a blocking scenario
@@ -21,7 +19,8 @@ class ImageSender():
 		socketType = zmq.REQ
 		self.zmq_context = SerializingContext() # this is a key
 		self.zmq_socket = self.zmq_context.socket(socketType)
-		self.zmq_socket.connect(address)
+		
+  		self.zmq_socket.connect(address)
 		# Assign corresponding send methods for REQ/REP mode
 		self.send_image = self.send_image_reqrep
 		self.send_jpg   = self.send_jpg_reqrep
@@ -30,7 +29,8 @@ class ImageSender():
 		socketType = zmq.PUB
 		self.zmq_context = SerializingContext() # this is a key
 		self.zmq_socket = self.zmq_context.socket(socketType)
-		self.zmq_socket.bind(address)
+		
+  		self.zmq_socket.bind(address)
 		# Assign corresponding send methods for PUB/SUB mode
 		self.send_image = self.send_image_pubsub
 		self.send_jpg   = self.send_jpg_pubsub
