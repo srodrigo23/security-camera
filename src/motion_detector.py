@@ -1,9 +1,8 @@
-import cv2, pandas, imutils
+import cv2
+import pandas
 from utils import resize
-import time, datetime
 
-# Motion Detector
-# https://www.pyimagesearch.com/2015/05/25/basic-motion-detection-and-tracking-with-python-and-opencv/
+import time, datetime
 
 class MotionDetector:
     
@@ -11,24 +10,22 @@ class MotionDetector:
         self.camera = camera
         self.motion_list = [None, None] # List when any moving object appear
         self.time = [] #Time of movement
-        self.df = pandas.DataFrame(
-            columns=["Start", "End"]
-        )
+        self.df = pandas.DataFrame(columns=["Start", "End"])
         self.stopped = False
+        # self.detect_motion()
     
-    def start(self):
-        self.thread = Thread(target=self.detect_motion, args=())
-        self.thread.setDaemon(True)
-        self.thread.start()
+    # def start(self):
+    #     self.thread = Thread(target=self.detect_motion, args=())
+    #     self.thread.setDaemon(True)
+    #     self.thread.start()
         
     def detect_motion(self):
-        time.sleep(2.0)
         static_back = None
-        i=0
-        # while True:
-        while self.camera.there_is_frames():
+        
+        while True:
+        # while self.camera.there_is_frames():
             frame = self.camera.get_frame()
-            
+            # if frame:
             motion = 'Still'
             gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
             gray = cv2.GaussianBlur(gray, (21, 21), 0)

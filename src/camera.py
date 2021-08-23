@@ -1,14 +1,18 @@
+# read config file
+from settings import Settings
+
 class Camera:
     
-    def __init__(self, src=0, use_pi_camera=False, resolution=(320, 240), frame_rate=32):
-        if use_pi_camera:
-            from pi_camera import PiCamera
-            self.cam = PiCamera(resolution=resolution,
-                                        framerate=frame_rate)
-        else:
+    def __init__(self, mode):
+        s = Settings()
+        if mode == "CAM":
             from web_camera import WebCamera
-            self.cam = WebCamera(src=src)
-    
+            self.cam = WebCamera(src = s.get_source(), 
+                                 resolution = s.get_resolution())
+        elif mode == "PICAM":
+            from pi_camera import PiCamera
+            self.cam = PiCamera(resolution = s.get_resolution(), framerate=s.get_frame_rate())
+        
     def start(self):
         return self.cam.start()
     

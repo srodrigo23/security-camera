@@ -1,0 +1,7 @@
+frame_rate: 32
+ip: 127.0.0.1
+port: 5555
+resolution:
+- 320
+- 240
+src: 0
