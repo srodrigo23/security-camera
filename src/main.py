@@ -22,11 +22,9 @@ def run(params):
             camera = Camera(mode = 'CAM')
         camera.start()
         motion_detector = MotionDetector(camera=camera)
-        motion_detector.detect_motion()
-        
+        motion_detector.run()
     else:
         print("Error en la ejecucion")
     
-
 if __name__ == "__main__":
     run(sys.argv)
