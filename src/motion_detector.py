@@ -56,7 +56,7 @@ class MotionDetector:
             self.draw_text(message=datetime.datetime.now().strftime(
                 "%A %d %B %Y %I:%M:%S%p"), pos=(5, self.frame.shape[0] - 5), color=(0, 0, 255))
                 
-            cv2.imshow("Diference", self.frame)
+            cv2.imshow("node", self.frame)
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 break
             

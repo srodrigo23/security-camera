@@ -1,7 +1,7 @@
 import cv2
 import pickle
 
-from settings as Settings
+from settings import Settings
 
 def encode(frame):
     settings = Settings()
