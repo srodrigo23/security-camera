@@ -17,15 +17,21 @@ class Settings():
     
     def get_frame_rate(self):
         return self.data['frame_rate']
+    
+    def get_port(self):
+        return self.data['port']
 
-    def get_ip_addres(self):
-        return self.data['ip']
+    def get_host_address(self):
+        return self.data['host']
         
     def get_resolution(self):
         return (self.data['resolution'][0], self.data['resolution'][1])
     
     def get_source(self):
         return self.data['src']
+    
+    def get_jpg_quality(self):
+        return self.data['quality']
     
     def set_source(self, src):
         self.data['src'] = src
