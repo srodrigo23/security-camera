@@ -15,25 +15,31 @@ else:
 class WebCamera():
     
     def __init__(self, src, resolution):
-        self.source = cv2.VideoCapture(src)
+        self.src = src
         self.resolution = resolution # to remove
-        self.frames_queue = Queue(maxsize=128)
+        self.frames_queue = Queue(maxsize=64)
         self.ready = False
             
     def start(self):
-        self.ready = True
-        self.thread = Thread(target=self.update, args=())
+        self.thread = Thread(target=self.catch_frames, args=())
         self.thread.setDaemon(True)
         self.thread.start()
     
-    def update(self):
-        if self.source == "0":
-            time.sleep(2.0)  # to load camera
-        while self.ready:
-            ret, frame = self.source.read()
-            if ret:
-                self.frames_queue.put(frame)
-                
+    def set_source(self):
+        self.feed = cv2.VideoCapture(self.src)
+        self.ready = True
+    
+    def catch_frames(self):
+        while True:
+            self.set_source()
+            time.sleep(2.0) # to charge the camera
+            while self.ready:
+                ret, frame = self.feed.read()
+                if ret:
+                    self.frames_queue.put(frame)
+                else:
+                    self.ready = False
+    
     def read(self):
         return self.frames_queue.get()# if self.frames_queue.qsize() > 0 else None
     
@@ -41,6 +47,6 @@ class WebCamera():
         return self.frames_queue.qsize() > 0
 
     def stop(self):
-        self.source.release()
+        self.feed.release()
         self.ready = False
         print_log('i', 'Finished capture frame')

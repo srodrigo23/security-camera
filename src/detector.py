@@ -10,12 +10,14 @@ class MotionDetector:
         gray = cv2.GaussianBlur(gray, (21, 21), 0)
         if self.static_back is None:
             self.static_back = gray
+            return (False, frame)
         else:
             cnts = self.check_diferences(gray)
             if len(cnts) > 0:
                 return (True, self.draw_conts(frame, cnts))
-        return (False, frame)
-    
+            else:
+                return (False, frame)
+        
     def check_diferences(self, gray):
         diff_frame = cv2.absdiff(self.static_back, gray)
         thresh_frame = cv2.threshold(diff_frame, 25, 255, cv2.THRESH_BINARY)[1]
@@ -25,7 +27,7 @@ class MotionDetector:
     
     def draw_conts(self, frame, conts):
         for contour in conts:
-            if cv2.contourArea(contour) >= 1000:  # < menor que
+            if cv2.contourArea(contour) >= 10:  # < menor que
                 (x, y, w, h) = cv2.boundingRect(contour)
                 cv2.rectangle(frame, (x, y), (x + w, y + h), (10, 255, 120), 1)
         return frame

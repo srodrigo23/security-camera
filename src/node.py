@@ -6,12 +6,14 @@ from settings import Settings
 from loger import print_log
 from camera import Camera
 from loger import print_log
-from motion_detector import MotionDetector
+from detector import MotionDetector
+
 """
     python main.py CAM    'path/to/the/video'
     python main.py CAM    0
     python main.py PICAM  
 """
+
 class Node():
     
     def __init__(self, params):
@@ -27,7 +29,7 @@ class Node():
     
     def show_captures(self):
         frame = self.camera.get_frame()
-        mov, frame = self.motion_detector.detect_motion(frame)
+        mov, frame = self.motion_detector.detect_motion(frame)        
         if mov:
             frame = self.draw_text(frame, message=f"Status: MOVEMENT", pos=(5, 13), color=(0, 0, 255))
         frame = self.draw_text(frame, message=datetime.datetime.now().strftime(
@@ -45,7 +47,7 @@ class Node():
             print_log('e', 'Node interrupted...')
             self.stop_node()
         else:
-            print('Node turned off, unplug connection...')
+            print_log('i', 'Node turned off, unplug connection...')
         
     def launch(self):
         self.ready = True
