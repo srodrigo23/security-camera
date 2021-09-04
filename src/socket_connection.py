@@ -7,17 +7,15 @@ import cv2
 import time
 import struct
 
-
 class SocketConnection():
     
     def __init__(self, camera):
         
-        self.settings = Settings()
+        # self.settings = Settings()
         self.cam = camera
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.host = self.settings.get_host_address()
         self.port = self.settings.get_port()
-    
         self.init_connection()
         
     

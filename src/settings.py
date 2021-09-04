@@ -8,7 +8,7 @@ except ImportError:
 class Settings():
     
     def __init__(self):
-        self.path_file = '../config.yaml'
+        self.path_file = 'config.yaml'
         self.read_file()
     
     def read_file(self):
