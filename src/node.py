@@ -7,6 +7,7 @@ from loger import print_log
 from camera import Camera
 from loger import print_log
 from detector import MotionDetector
+from communicator import Communicator
 
 """
     python main.py CAM    'path/to/the/video'
@@ -20,27 +21,31 @@ class Node():
         self.settings = Settings()
         self.camera = self.create_camera(params)
         self.motion_detector = MotionDetector()
+        self.communicator = Communicator(self.settings)
         self.ready = False
+        self.broadcast = False
 
     def create_camera(self, params):
         return Camera(mode=params[1], 
                       src=(params[2] if len(params) > 2 else None), 
                       settings=self.settings)
     
-    def show_captures(self):
-        frame = self.camera.get_frame()
-        mov, frame = self.motion_detector.detect_motion(frame)        
+    def add_labels(self, mov, frame):
         if mov:
             frame = self.draw_text(frame, message=f"Status: MOVEMENT", pos=(5, 13), color=(0, 0, 255))
         frame = self.draw_text(frame, message=datetime.datetime.now().strftime(
             "%A %d %B %Y %I:%M:%S%p"), pos=(5, frame.shape[0] - 5), color=(0, 0, 255))
-        cv2.imshow('test', frame)
-    
+        return frame
+        
     def run(self):
         print_log('i', 'Welcome node Camera...')
         try:
             while self.ready:
-                self.show_captures()
+                frame = self.camera.get_frame()
+                # self.communicator.send_frame(frame)
+                # mov, frame = self.motion_detector.detect_motion(frame)
+                # frame = self.add_labels(mov, frame)
+                cv2.imshow('test', frame)
                 if cv2.waitKey(1) & 0xFF == ord('q'):
                     break
         except KeyboardInterrupt:  # close all threads
@@ -52,6 +57,7 @@ class Node():
     def launch(self):
         self.ready = True
         self.camera.start()
+        self.communicator.init_connection()
         self.run()
         
     def stop_node(self):

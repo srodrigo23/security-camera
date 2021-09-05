@@ -27,7 +27,7 @@ class MotionDetector:
     
     def draw_conts(self, frame, conts):
         for contour in conts:
-            if cv2.contourArea(contour) >= 10:  # < menor que
+            if cv2.contourArea(contour) >= 1000:  # < menor que
                 (x, y, w, h) = cv2.boundingRect(contour)
                 cv2.rectangle(frame, (x, y), (x + w, y + h), (10, 255, 120), 1)
         return frame

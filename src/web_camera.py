@@ -2,6 +2,7 @@ import sys
 import cv2
 import time
 import utils
+import imutils as im
 
 from threading import Thread
 from utils import resize
@@ -32,10 +33,12 @@ class WebCamera():
     def catch_frames(self):
         while True:
             self.set_source()
-            time.sleep(2.0) # to charge the camera
+            if self.src=='0':
+                time.sleep(2.0) # to charge the camera
             while self.ready:
                 ret, frame = self.feed.read()
                 if ret:
+                    frame = im.resize(frame, self.resolution[0], self.resolution[1])
                     self.frames_queue.put(frame)
                 else:
                     self.ready = False
