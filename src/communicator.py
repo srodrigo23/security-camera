@@ -1,16 +1,18 @@
+from settings import Settings
+from threading import Thread
+from loger import print_log
+
 import socket
 import cv2
 import time
 import struct
 import pickle
 
-from settings import Settings
-from threading import Thread
-from loger import print_log
-
 class Communicator():
     
     def __init__(self, settings):
+        """
+        """
         self.settings = settings
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.host = self.settings.get_host_address()
@@ -19,12 +21,16 @@ class Communicator():
                         self.settings.get_jpg_quality()]
     
     def init_connection(self):
+        """
+        """
         try:
             self.socket.connect((self.host, self.port))
         except socket.error as e:
             print_log('e', f'Connection don\'t reached {str(e)}')
         
-    def send_frame(self, frame):    
+    def send_frame(self, frame):
+        """
+        """
         # pickle representation of the object obj as a bytes object, instead of writting it to a file
         result, image = cv2.imencode('.jpg', frame, self.encode_param)
         data = pickle.dumps(image, 0)

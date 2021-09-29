@@ -33,6 +33,9 @@ class Settings():
     def get_jpg_quality(self):
         return self.data['quality']
     
+    def get_frame_size(self):
+        return self.data['frame_size']
+    
     def set_source(self, src):
         self.data['src'] = src
         with open(self.path_file, 'w') as edit:

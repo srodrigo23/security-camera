@@ -6,3 +6,4 @@ resolution:
 - 320
 - 240
 src: 0
+frame_size: 30
