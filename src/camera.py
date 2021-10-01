@@ -30,15 +30,18 @@ class Camera:
     
     def get_frame(self):
         """
+        Return frame stored in a queue
         """
         return self.cam.read()
     
     def stop(self):
         """
+        Stop camera and close
         """
         self.cam.stop()
     
     def there_is_frames(self):
         """
+        Return if there is more frames
         """
         return self.cam.is_more()

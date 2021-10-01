@@ -1,236 +1,521 @@
-1533 09/05/2021 11:02:02 PM ERROR : Connection don't reached [Errno 61] Connection refused
-1533 09/05/2021 11:02:02 PM INFO : Welcome node Camera...
-1533 09/05/2021 11:03:16 PM INFO : Node turned off, unplug connection...
-2587 09/05/2021 11:28:10 PM ERROR : Connection don't reached [Errno 61] Connection refused
-2587 09/05/2021 11:28:10 PM INFO : Welcome node Camera...
-2587 09/05/2021 11:29:34 PM INFO : Node turned off, unplug connection...
-2778 09/06/2021 12:07:04 AM ERROR : Connection don't reached [Errno 61] Connection refused
-2778 09/06/2021 12:07:04 AM INFO : Welcome node Camera...
-2783 09/06/2021 12:07:07 AM ERROR : Connection don't reached [Errno 61] Connection refused
-2783 09/06/2021 12:07:07 AM INFO : Welcome node Camera...
-2787 09/06/2021 12:07:10 AM ERROR : Connection don't reached [Errno 61] Connection refused
-2787 09/06/2021 12:07:10 AM INFO : Welcome node Camera...
-2778 09/06/2021 12:08:20 AM INFO : Node turned off, unplug connection...
-2787 09/06/2021 12:08:23 AM INFO : Node turned off, unplug connection...
-2783 09/06/2021 12:08:26 AM INFO : Node turned off, unplug connection...
-2832 09/06/2021 12:17:10 AM ERROR : Connection don't reached [Errno 61] Connection refused
-2832 09/06/2021 12:17:10 AM INFO : Welcome node Camera...
-2832 09/06/2021 12:17:45 AM INFO : Node turned off, unplug connection...
-3471 09/07/2021 11:46:27 AM ERROR : Connection don't reached [Errno 61] Connection refused
-3471 09/07/2021 11:46:27 AM INFO : Welcome node Camera...
-3487 09/07/2021 11:48:49 AM ERROR : Connection don't reached [Errno 61] Connection refused
-3487 09/07/2021 11:48:49 AM INFO : Welcome node Camera...
-3487 09/07/2021 11:49:01 AM ERROR : Node interrupted...
-3502 09/07/2021 11:50:14 AM ERROR : Connection don't reached [Errno 61] Connection refused
-3502 09/07/2021 11:50:14 AM INFO : Welcome node Camera...
-3502 09/07/2021 11:50:39 AM ERROR : Node interrupted...
-3471 09/07/2021 11:50:53 AM ERROR : Node interrupted...
-3514 09/07/2021 11:51:06 AM ERROR : Connection don't reached [Errno 61] Connection refused
-3514 09/07/2021 11:51:06 AM INFO : Welcome node Camera...
-3514 09/07/2021 11:51:09 AM ERROR : Node interrupted...
-3519 09/07/2021 11:51:21 AM ERROR : Connection don't reached [Errno 61] Connection refused
-3519 09/07/2021 11:51:21 AM INFO : Welcome node Camera...
-3519 09/07/2021 11:51:23 AM ERROR : Node interrupted...
-3523 09/07/2021 11:51:35 AM ERROR : Connection don't reached [Errno 61] Connection refused
-3523 09/07/2021 11:51:35 AM INFO : Welcome node Camera...
-3527 09/07/2021 11:51:54 AM ERROR : Connection don't reached [Errno 61] Connection refused
-3527 09/07/2021 11:51:54 AM INFO : Welcome node Camera...
-3527 09/07/2021 11:51:56 AM ERROR : Node interrupted...
-3534 09/07/2021 11:52:07 AM ERROR : Connection don't reached [Errno 61] Connection refused
-3534 09/07/2021 11:52:07 AM INFO : Welcome node Camera...
-3534 09/07/2021 11:52:41 AM ERROR : Node interrupted...
-3523 09/07/2021 11:52:46 AM ERROR : Node interrupted...
-3948 09/07/2021 12:11:19 PM ERROR : Connection don't reached [Errno 61] Connection refused
-3948 09/07/2021 12:11:19 PM INFO : Welcome node Camera...
-3948 09/07/2021 12:11:24 PM ERROR : Node interrupted...
-3962 09/07/2021 12:11:46 PM ERROR : Connection don't reached [Errno 61] Connection refused
-3962 09/07/2021 12:11:46 PM INFO : Welcome node Camera...
-3962 09/07/2021 12:11:47 PM ERROR : Node interrupted...
-4036 09/07/2021 12:12:23 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4036 09/07/2021 12:12:23 PM INFO : Welcome node Camera...
-4036 09/07/2021 12:12:25 PM ERROR : Node interrupted...
-4102 09/07/2021 01:10:13 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4102 09/07/2021 01:10:13 PM INFO : Welcome node Camera...
-4102 09/07/2021 01:10:17 PM ERROR : Node interrupted...
-4187 09/07/2021 01:12:02 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4187 09/07/2021 01:12:02 PM INFO : Welcome node Camera...
-4187 09/07/2021 01:12:05 PM ERROR : Node interrupted...
-4202 09/07/2021 01:12:16 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4202 09/07/2021 01:12:16 PM INFO : Welcome node Camera...
-4202 09/07/2021 01:12:19 PM ERROR : Node interrupted...
-4230 09/07/2021 01:12:36 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4230 09/07/2021 01:12:36 PM INFO : Welcome node Camera...
-4230 09/07/2021 01:12:40 PM ERROR : Node interrupted...
-4267 09/07/2021 01:13:18 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4267 09/07/2021 01:13:18 PM INFO : Welcome node Camera...
-4267 09/07/2021 01:13:21 PM ERROR : Node interrupted...
-4294 09/07/2021 01:14:00 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4294 09/07/2021 01:14:00 PM INFO : Welcome node Camera...
-4294 09/07/2021 01:14:02 PM ERROR : Node interrupted...
-4366 09/07/2021 01:48:09 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4366 09/07/2021 01:48:09 PM INFO : Welcome node Camera...
-4366 09/07/2021 01:48:14 PM ERROR : Node interrupted...
-4372 09/07/2021 01:48:20 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4372 09/07/2021 01:48:20 PM INFO : Welcome node Camera...
-4372 09/07/2021 01:48:21 PM ERROR : Node interrupted...
-4379 09/07/2021 01:49:20 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4379 09/07/2021 01:49:20 PM INFO : Welcome node Camera...
-4379 09/07/2021 01:49:39 PM INFO : Node turned off, unplug connection...
-4427 09/07/2021 01:50:12 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4427 09/07/2021 01:50:12 PM INFO : Welcome node Camera...
-4427 09/07/2021 01:50:54 PM INFO : Node turned off, unplug connection...
-4470 09/07/2021 01:51:26 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4470 09/07/2021 01:51:26 PM INFO : Welcome node Camera...
-4470 09/07/2021 01:51:54 PM INFO : Node turned off, unplug connection...
-4548 09/07/2021 01:53:08 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4548 09/07/2021 01:53:08 PM INFO : Welcome node Camera...
-4548 09/07/2021 01:53:46 PM INFO : Node turned off, unplug connection...
-4590 09/07/2021 01:54:49 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4590 09/07/2021 01:54:49 PM INFO : Welcome node Camera...
-4590 09/07/2021 01:55:00 PM INFO : Node turned off, unplug connection...
-4633 09/07/2021 01:55:24 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4633 09/07/2021 01:55:24 PM INFO : Welcome node Camera...
-4633 09/07/2021 01:55:35 PM INFO : Node turned off, unplug connection...
-4648 09/07/2021 01:55:41 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4648 09/07/2021 01:55:41 PM INFO : Welcome node Camera...
-4648 09/07/2021 01:55:56 PM INFO : Node turned off, unplug connection...
-4652 09/07/2021 01:56:03 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4652 09/07/2021 01:56:03 PM INFO : Welcome node Camera...
-4652 09/07/2021 01:56:19 PM INFO : Node turned off, unplug connection...
-4733 09/07/2021 01:58:02 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4733 09/07/2021 01:58:02 PM INFO : Welcome node Camera...
-4733 09/07/2021 02:01:15 PM INFO : Node turned off, unplug connection...
-4778 09/07/2021 02:02:46 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4778 09/07/2021 02:02:46 PM INFO : Welcome node Camera...
-4778 09/07/2021 02:03:42 PM INFO : Node turned off, unplug connection...
-4793 09/07/2021 02:03:52 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4793 09/07/2021 02:03:52 PM INFO : Welcome node Camera...
-4793 09/07/2021 02:04:13 PM INFO : Node turned off, unplug connection...
-4947 09/07/2021 02:23:11 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4947 09/07/2021 02:23:11 PM INFO : Welcome node Camera...
-4947 09/07/2021 02:23:48 PM INFO : Node turned off, unplug connection...
-4999 09/07/2021 02:25:00 PM ERROR : Connection don't reached [Errno 61] Connection refused
-4999 09/07/2021 02:25:00 PM INFO : Welcome node Camera...
-4999 09/07/2021 02:25:35 PM INFO : Node turned off, unplug connection...
-5140 09/07/2021 02:28:27 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5140 09/07/2021 02:28:27 PM INFO : Welcome node Camera...
-5140 09/07/2021 02:28:46 PM INFO : Node turned off, unplug connection...
-5218 09/07/2021 02:30:06 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5218 09/07/2021 02:30:06 PM INFO : Welcome node Camera...
-5218 09/07/2021 02:30:30 PM INFO : Node turned off, unplug connection...
-5223 09/07/2021 02:30:44 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5223 09/07/2021 02:30:44 PM INFO : Welcome node Camera...
-5223 09/07/2021 02:31:32 PM INFO : Node turned off, unplug connection...
-5230 09/07/2021 02:31:35 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5230 09/07/2021 02:31:35 PM INFO : Welcome node Camera...
-5230 09/07/2021 02:31:55 PM INFO : Node turned off, unplug connection...
-5277 09/07/2021 02:32:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5277 09/07/2021 02:32:39 PM INFO : Welcome node Camera...
-5277 09/07/2021 02:34:13 PM INFO : Node turned off, unplug connection...
-5284 09/07/2021 02:34:19 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5284 09/07/2021 02:34:19 PM INFO : Welcome node Camera...
-5284 09/07/2021 02:35:03 PM INFO : Node turned off, unplug connection...
-5325 09/07/2021 02:35:29 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5325 09/07/2021 02:35:29 PM INFO : Welcome node Camera...
-5325 09/07/2021 02:36:09 PM INFO : Node turned off, unplug connection...
-5338 09/07/2021 02:36:14 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5338 09/07/2021 02:36:14 PM INFO : Welcome node Camera...
-5338 09/07/2021 02:36:38 PM INFO : Node turned off, unplug connection...
-5342 09/07/2021 02:36:44 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5342 09/07/2021 02:36:44 PM INFO : Welcome node Camera...
-5389 09/07/2021 02:38:22 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5389 09/07/2021 02:38:23 PM INFO : Welcome node Camera...
-5411 09/07/2021 02:38:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5411 09/07/2021 02:38:37 PM INFO : Welcome node Camera...
-5411 09/07/2021 02:39:10 PM INFO : Node turned off, unplug connection...
-5456 09/07/2021 02:39:41 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5456 09/07/2021 02:39:41 PM INFO : Welcome node Camera...
-5456 09/07/2021 02:40:07 PM INFO : Node turned off, unplug connection...
-5473 09/07/2021 02:40:23 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5473 09/07/2021 02:40:23 PM INFO : Welcome node Camera...
-5473 09/07/2021 02:40:36 PM INFO : Node turned off, unplug connection...
-5477 09/07/2021 02:40:41 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5477 09/07/2021 02:40:41 PM INFO : Welcome node Camera...
-5477 09/07/2021 02:40:49 PM INFO : Node turned off, unplug connection...
-5482 09/07/2021 02:40:57 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5482 09/07/2021 02:40:57 PM INFO : Welcome node Camera...
-5482 09/07/2021 02:41:09 PM INFO : Node turned off, unplug connection...
-5487 09/07/2021 02:41:14 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5487 09/07/2021 02:41:14 PM INFO : Welcome node Camera...
-5487 09/07/2021 02:41:47 PM INFO : Node turned off, unplug connection...
-5493 09/07/2021 02:41:52 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5493 09/07/2021 02:41:52 PM INFO : Welcome node Camera...
-5493 09/07/2021 02:42:24 PM INFO : Node turned off, unplug connection...
-5498 09/07/2021 02:42:32 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5498 09/07/2021 02:42:32 PM INFO : Welcome node Camera...
-5498 09/07/2021 02:43:03 PM INFO : Node turned off, unplug connection...
-5531 09/07/2021 02:43:20 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5531 09/07/2021 02:43:20 PM INFO : Welcome node Camera...
-5531 09/07/2021 02:43:34 PM INFO : Node turned off, unplug connection...
-5554 09/07/2021 02:43:45 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5554 09/07/2021 02:43:45 PM INFO : Welcome node Camera...
-5554 09/07/2021 02:43:59 PM INFO : Node turned off, unplug connection...
-5565 09/07/2021 02:44:01 PM ERROR : Connection don't reached [Errno 61] Connection refused
-5565 09/07/2021 02:44:01 PM INFO : Welcome node Camera...
-5565 09/07/2021 02:44:19 PM INFO : Node turned off, unplug connection...
-19947 09/12/2021 01:52:19 PM ERROR : Connection don't reached [Errno 61] Connection refused
-19947 09/12/2021 01:52:19 PM INFO : Welcome node Camera...
-19947 09/12/2021 01:53:29 PM INFO : Node turned off, unplug connection...
-20027 09/12/2021 02:00:16 PM ERROR : Connection don't reached [Errno 61] Connection refused
-20027 09/12/2021 02:00:16 PM INFO : Welcome node Camera...
-20027 09/12/2021 02:01:13 PM INFO : Node turned off, unplug connection...
-20235 09/12/2021 02:06:29 PM ERROR : Connection don't reached [Errno 61] Connection refused
-20235 09/12/2021 02:06:29 PM INFO : Welcome node Camera...
-20235 09/12/2021 02:07:08 PM INFO : Node turned off, unplug connection...
-21306 09/12/2021 04:02:57 PM ERROR : Connection don't reached [Errno 61] Connection refused
-21306 09/12/2021 04:02:57 PM INFO : Welcome node Camera...
-21306 09/12/2021 04:03:05 PM INFO : Node turned off, unplug connection...
-21417 09/12/2021 04:05:13 PM ERROR : Connection don't reached [Errno 61] Connection refused
-21417 09/12/2021 04:05:13 PM INFO : Welcome node Camera...
-21417 09/12/2021 04:05:18 PM INFO : Node turned off, unplug connection...
-21493 09/12/2021 04:07:18 PM ERROR : Connection don't reached [Errno 61] Connection refused
-21493 09/12/2021 04:07:18 PM INFO : Welcome node Camera...
-21493 09/12/2021 04:07:28 PM INFO : Node turned off, unplug connection...
-5735 09/20/2021 01:43:31 PM INFO : Welcome node Camera...
-5735 09/20/2021 01:43:55 PM INFO : Node turned off, unplug connection...
-6252 09/20/2021 01:54:42 PM ERROR : Connection don't reached [Errno 61] Connection refused
-6252 09/20/2021 01:54:42 PM INFO : Welcome node Camera...
-6252 09/20/2021 01:54:48 PM INFO : Node turned off, unplug connection...
-24066 09/27/2021 09:07:39 AM ERROR : Connection don't reached [Errno 61] Connection refused
-24066 09/27/2021 09:07:39 AM INFO : Welcome node Camera...
-24081 09/27/2021 09:07:46 AM ERROR : Connection don't reached [Errno 61] Connection refused
-24081 09/27/2021 09:07:46 AM INFO : Welcome node Camera...
-30145 09/27/2021 10:03:01 AM ERROR : Connection don't reached [Errno 61] Connection refused
-30145 09/27/2021 10:03:01 AM INFO : Welcome node Camera...
-30858 09/27/2021 10:06:35 AM ERROR : Connection don't reached [Errno 61] Connection refused
-30858 09/27/2021 10:06:35 AM INFO : Welcome node Camera...
-30905 09/27/2021 10:06:42 AM ERROR : Connection don't reached [Errno 61] Connection refused
-30905 09/27/2021 10:06:42 AM INFO : Welcome node Camera...
-31037 09/27/2021 10:06:48 AM ERROR : Connection don't reached [Errno 61] Connection refused
-31037 09/27/2021 10:06:48 AM INFO : Welcome node Camera...
-12066 09/27/2021 04:35:32 PM ERROR : Connection don't reached [Errno 61] Connection refused
-12066 09/27/2021 04:35:32 PM INFO : Welcome node Camera...
-12142 09/27/2021 04:42:20 PM ERROR : Connection don't reached [Errno 61] Connection refused
-12142 09/27/2021 04:42:20 PM INFO : Welcome node Camera...
-12192 09/27/2021 04:44:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
-12192 09/27/2021 04:44:39 PM INFO : Welcome node Camera...
-12262 09/27/2021 04:46:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
-12262 09/27/2021 04:46:37 PM INFO : Welcome node Camera...
-12270 09/27/2021 04:46:55 PM ERROR : Connection don't reached [Errno 61] Connection refused
-12270 09/27/2021 04:46:55 PM INFO : Welcome node Camera...
-12270 09/27/2021 04:47:44 PM INFO : Node turned off, unplug connection...
-12297 09/27/2021 04:48:18 PM ERROR : Connection don't reached [Errno 61] Connection refused
-12297 09/27/2021 04:48:18 PM INFO : Welcome node Camera...
-12297 09/27/2021 04:48:27 PM INFO : Node turned off, unplug connection...
-18377 09/27/2021 09:43:41 PM ERROR : Connection don't reached [Errno 61] Connection refused
-18377 09/27/2021 09:43:41 PM INFO : Welcome node Camera...
-26677 09/29/2021 07:04:14 AM INFO : Welcome node Camera...
-26677 09/29/2021 07:04:26 AM ERROR : Node interrupted...
-26677 09/29/2021 07:04:26 AM INFO : Finished capture frame
-26703 09/29/2021 07:05:18 AM INFO : Welcome node Camera...
-26703 09/29/2021 07:05:23 AM ERROR : Node interrupted...
-26703 09/29/2021 07:05:24 AM INFO : Finished capture frame
-26736 09/29/2021 07:05:43 AM INFO : Welcome node Camera...
-26767 09/29/2021 07:06:23 AM INFO : Welcome node Camera...
-26833 09/29/2021 07:07:25 AM INFO : Welcome node Camera...
-26833 09/29/2021 07:10:10 AM INFO : Node turned off, unplug connection...
+28784 09/29/2021 09:25:07 PM INFO : Welcome node Camera...
+28784 09/29/2021 09:25:10 PM INFO : Finished capture frame
+28784 09/29/2021 09:25:22 PM ERROR : Node interrupted...
+28784 09/29/2021 09:25:22 PM INFO : Finished capture frame
+28812 09/29/2021 09:25:25 PM INFO : Welcome node Camera...
+28812 09/29/2021 09:26:44 PM INFO : Node turned off, unplug connection...
+28870 09/30/2021 04:43:45 AM INFO : Welcome node Camera...
+28870 09/30/2021 04:45:34 AM INFO : Node turned off, unplug connection...
+34586 09/30/2021 09:03:17 AM INFO : Welcome node Camera...
+34606 09/30/2021 09:03:32 AM INFO : Welcome node Camera...
+1813 09/30/2021 02:49:57 PM INFO : Welcome node Camera...
+2095 09/30/2021 02:58:33 PM INFO : Welcome node Camera...
+2300 09/30/2021 03:06:59 PM INFO : Welcome node Camera...
+5429 09/30/2021 10:02:36 PM INFO : Welcome node Camera...
+5557 09/30/2021 10:13:37 PM INFO : Welcome node Camera...
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:37 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+5557 09/30/2021 10:13:39 PM ERROR : Connection don't reached [Errno 61] Connection refused
+7458 09/30/2021 11:03:35 PM INFO : Welcome node Camera...
+7458 09/30/2021 11:03:42 PM ERROR : Node interrupted...
+7458 09/30/2021 11:03:42 PM INFO : Finished capture frame
+7485 09/30/2021 11:04:43 PM INFO : Welcome node Camera...
+7485 09/30/2021 11:04:46 PM ERROR : Node interrupted...
+7485 09/30/2021 11:04:46 PM INFO : Finished capture frame

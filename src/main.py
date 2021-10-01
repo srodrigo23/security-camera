@@ -1,6 +1,7 @@
 
 from node import Node
 from settings import Settings
+from connection import Connection
 
 import sys
 def run_node(params):
@@ -10,7 +11,11 @@ def run_node(params):
     settings = Settings()
     node = Node(params, settings)
     node.execute()
-
+    
+    connection = Connection(settings.get_host_address(
+    ), settings.get_port(), settings.get_jpg_quality(), node)
+    connection.execute()
+    
 # /Users/sergiorodrigo/Documents/tesis/code/videos/video1.mp4
 """
     python main.py cam    'path/to/the/video'
