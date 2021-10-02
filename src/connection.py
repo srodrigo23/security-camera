@@ -26,17 +26,23 @@ class Connection():
         self.socket = None
         self.connected = False
         self.send_frame = False
-        start_new_thread(self.connect_socket, ())
         
+        self.thread_connection = Thread(target=self.connect_socket, args=())
+        self.thread_connection.daemon = True
+        self.thread_connection.start()
+        # start_new_thread(self.connect_socket, ())
+
     def connect_socket(self):
         """
         Method to live like a thread to attempt connect to the server
         """
         while not self.connected:
+            self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             try:
-                self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                self.socket.connect((self.host, self.port))
+                print(f'intentando conectarse {attempt}')
                 time.sleep(2.0)
+                attempt += 1    
+                self.socket.connect((self.host, self.port))
             except socket.error as e:
                 print_log('e', f'Connection don\'t reached {str(e)}')
             else:
@@ -47,7 +53,8 @@ class Connection():
         """
         Method to live like a thread to listen messages and manage it by two conditions
         """
-        while self.connect:
+        while self.connected:
+            print('listening messages')
             message = self.socket.recv(1024)
             message = message.decode('utf-8')
             

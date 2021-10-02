@@ -10,11 +10,10 @@ def run_node(params):
     """
     settings = Settings()
     node = Node(params, settings)
-    node.execute()
-    
     connection = Connection(settings.get_host_address(
     ), settings.get_port(), settings.get_jpg_quality(), node)
     connection.execute()
+    node.execute()
     
 # /Users/sergiorodrigo/Documents/tesis/code/videos/video1.mp4
 """
