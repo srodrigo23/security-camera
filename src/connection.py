@@ -39,19 +39,19 @@ class Connection():
         while not self.connected:
             self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             try:
-                print(f'intentando conectarse {attempt}')
+                print(f'intentando conectarse')
                 time.sleep(2.0)
-                attempt += 1    
                 self.socket.connect((self.host, self.port))
             except socket.error as e:
                 print_log('e', f'Connection don\'t reached {str(e)}')
             else:
                 self.connected = True
+                print('listo para escuchar')
                 start_new_thread(self.listen_messages, ())
     
     def listen_messages(self):
         """
-        Method to live like a thread to listen messages and manage it by two conditions
+            Method to live like a thread to listen messages and manage it by two conditions
         """
         while self.connected:
             print('listening messages')
@@ -69,8 +69,9 @@ class Connection():
         Method to send frames while the message is live
         """        
         while self.send_frame:
+            self.socket.sendall(b'hola soy la camara')
             time.sleep(0.5)
-            send_frame(self.node.camera.get_frame())
+            # send_frame(self.node.camera.get_frame())
                
     def send_frame(self, frame):
         """

@@ -22,19 +22,19 @@ class Node():
             
     def execute(self):
         """
-        Method to send frames when there is a flag to do it
+        
         """
         print_log('i', 'Welcome node Camera...')
-        while self.ready:
-            try:
+        try:
+            while self.ready:
                 time.sleep(1)
-                # frame = self.camera.get_frame()
-                # frame = self.draw_text(
-                #     frame, message=f"Status: MOVEMENT", pos=(5, 13), color=(0, 0, 255))
-                # self.connection.send_frame(frame)
-            except KeyboardInterrupt:
-                print_log('e', 'Node interrupted...')
-                self.stop_node()
+            # frame = self.camera.get_frame()
+            # frame = self.draw_text(
+            #     frame, message=f"Status: MOVEMENT", pos=(5, 13), color=(0, 0, 255))
+            # self.connection.send_frame(frame)
+        except KeyboardInterrupt:
+            print_log('e', 'Node interrupted...')
+            self.stop_node()
                          
     def stop_node(self):
         """

@@ -15,7 +15,7 @@ class WebCamera():
     
     def __init__(self, src, frame_size):
         """
-        Constructor to webcamera with resolution
+            Constructor to webcamera with resolution
         """
         self.time_sleep = 1
         self.frame_size = frame_size
@@ -23,9 +23,9 @@ class WebCamera():
         self.feed = cv2.VideoCapture(src)
         self.ready = True
             
-    def start(self):
+    def start(self): 
         """
-        Method to init thread webcamera
+            Method to init thread webcamera
         """
         self.thread = Thread(target=self.catch_frames, args =())
         self.thread.daemon=True
@@ -33,7 +33,7 @@ class WebCamera():
         
     def rescale_frame(self, frame, percent=75):
         """
-        Method to resize a frame from original size about percent size
+            Method to resize a frame from original size about percent size
         """
         width = int(frame.shape[1] * percent / 100)
         height = int(frame.shape[0] * percent / 100)
@@ -42,7 +42,7 @@ class WebCamera():
     
     def catch_frames(self):
         """
-        Method to catch frames in 2 ways
+            Method to catch frames in 2 ways
         """
         # if self.src == '0' : time.sleep(2.0)  # to charge the camera
         while self.ready:
@@ -56,19 +56,19 @@ class WebCamera():
     
     def read(self):
         """
-        Method to return a frame from webcam queue
+            Method to return a frame from webcam queue
         """
         return self.frames_queue.get()
     
     def is_more(self):
         """
-        Method to know if there are more frames
+            Method to know if there are more frames
         """
         return self.frames_queue.qsize() > 0
 
     def stop(self):
         """
-        Method to stop catch frames
+            Method to stop catch frames
         """
         self.ready = False
         self.feed.release()
