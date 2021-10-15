@@ -1,19 +1,25 @@
 
-from node import Node
-from settings import Settings
-from connection import Connection
+# from node import Node
+# from settings import Settings
+# from connection import Connection
+from view.monitor import Monitor
 
 import sys
-def run_node(params):
+
+def __run_node__():
     """
-    Start node in diferents modes depends promt params
+        Start node with command and gui interface
     """
-    settings = Settings()
-    node = Node(params, settings)
-    connection = Connection(settings.get_host_address(
-    ), settings.get_port(), settings.get_jpg_quality(), node)
-    connection.execute()
-    node.execute()
+    __monitor__ = Monitor()
+    __monitor__.mainloop()    
+    # settings = Settings()
+    # node = Node(params, settings)
+    # connection = Connection(settings.get_host_address(
+    # ), settings.get_port(), settings.get_jpg_quality(), node)
+    # connection.execute()
+    # node.execute()
+    
+    
     
 # /Users/sergiorodrigo/Documents/tesis/code/videos/video1.mp4
 """
@@ -22,4 +28,4 @@ def run_node(params):
     python main.py picam  
 """
 if __name__ == "__main__":
-    run_node(sys.argv)
+    __run_node__()

@@ -36,3 +36,18 @@
 1895 10/02/2021 10:31:13 PM ERROR : Connection don't reached [Errno 61] Connection refused
 1895 10/02/2021 10:31:14 PM ERROR : Node interrupted...
 1895 10/02/2021 10:31:14 PM INFO : Finished capture frame
+1156 10/14/2021 07:57:28 AM INFO : Welcome node Camera...
+1156 10/14/2021 07:57:30 AM ERROR : Connection don't reached [Errno 61] Connection refused
+1156 10/14/2021 07:57:32 AM ERROR : Connection don't reached [Errno 61] Connection refused
+1156 10/14/2021 07:57:34 AM ERROR : Connection don't reached [Errno 61] Connection refused
+1156 10/14/2021 07:57:36 AM ERROR : Connection don't reached [Errno 61] Connection refused
+1156 10/14/2021 07:57:38 AM ERROR : Connection don't reached [Errno 61] Connection refused
+1156 10/14/2021 07:57:40 AM ERROR : Connection don't reached [Errno 61] Connection refused
+1156 10/14/2021 07:57:42 AM ERROR : Connection don't reached [Errno 61] Connection refused
+1156 10/14/2021 07:57:44 AM ERROR : Connection don't reached [Errno 61] Connection refused
+1156 10/14/2021 07:57:46 AM ERROR : Connection don't reached [Errno 61] Connection refused
+1156 10/14/2021 07:57:48 AM ERROR : Connection don't reached [Errno 61] Connection refused
+1156 10/14/2021 07:57:50 AM ERROR : Connection don't reached [Errno 61] Connection refused
+1156 10/14/2021 07:57:51 AM ERROR : Node interrupted...
+1156 10/14/2021 07:57:51 AM INFO : Finished capture frame
+1156 10/14/2021 07:57:52 AM INFO : Finished capture frame
