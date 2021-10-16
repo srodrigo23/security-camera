@@ -5,11 +5,10 @@ from tkinter.ttk import Button, Entry
 
 class Connection(LabelFrame):
     
-    
-    def __init__(self, parent):
+    def __init__(self, parent, controller):
         tk.LabelFrame.__init__(self, parent)
         self.__title__ = 'Connection'
-
+        self.__controller__ = controller
         self.setup_connection()
 
     def setup_connection(self):
