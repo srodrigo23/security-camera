@@ -9,12 +9,12 @@ class Source(LabelFrame):
             Init Source to show 
         """
         tk.LabelFrame.__init__(self, parent)
-        self.__message__ = "Fuente"
+        self.__title__ = "Source"
         
         self.setup_source()
 
     def setup_source(self):
-        self.config(text=self.__message__)
+        self.config(text=self.__title__)
         # __videos__, __path__ = self.controller.get_videos()
         __videos__ = ['A', 'B', 'C']
         __cbx_video_source__ = Combobox(self, state='readonly', values=__videos__)
