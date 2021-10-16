@@ -17,8 +17,8 @@ class Connection(LabelFrame):
         self.columnconfigure(0, weight=1)
         self.columnconfigure(1, weight=1)
 
-        __lbl_ip__ = Label(self, text='IP')
-        __lbl_port__ = Label(self, text='Port')
+        __lbl_ip__ = Label(self, text='IP :')
+        __lbl_port__ = Label(self, text='Port :')
         
         __ent_ip__ = Entry(self, width=15)
         __ent_port__ = Entry(self, width=15)

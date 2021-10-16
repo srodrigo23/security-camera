@@ -24,10 +24,11 @@ class Controls(LabelFrame):
         # self.rowconfigure(0, weight=1)
         # self.rowconfigure(1, weight=1)
         
-        __btn_camera__ = Button(self, compound='left', text='Launch Camera', 
-                                command=lambda: print('llega'),
-                                )
-        __btn_camera__.grid(row=0, column=0, rowspan=2, columnspan=2, padx=2, pady=2, sticky='nswe')
+        __btn_camera__ = Button(self, compound='left', text='Launch Camera', command=lambda: print('llega'))
+        __btn_camera__.grid(row=0, column=0, rowspan=1, columnspan=2, padx=2, pady=2, sticky='ew')
+        
+        __btn_pi_camera__ = Button(self, compound = 'left', text = 'Launch PiCamera', command=lambda: print('llega'))
+        __btn_pi_camera__.grid(row=1, column=0, rowspan=1, columnspan=2, padx=2, pady=2, sticky='ew')
         
         __btn_video__ = Button(self, compound='left', text='Launch Video', 
                                command=lambda: print('llega')
