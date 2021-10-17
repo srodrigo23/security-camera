@@ -14,7 +14,6 @@ class Monitor(tk.Tk):
     """
     def __init__(self, controller):
         super().__init__()
-        
         self.__width__ = 560
         self.__height__ = 370
         self.__title__ = 'Node'
@@ -23,7 +22,7 @@ class Monitor(tk.Tk):
         
         self.setup()
         self.setup_screen()
-        self.setup_controls(self.__controller__.get_socket_controller())
+        self.setup_controls(self.__controller__.get__controller())
         self.setup_connection(self.__controller__.get_socket_controller())
         self.setup_messages()
         self.setup_button_exit()
@@ -46,18 +45,15 @@ class Monitor(tk.Tk):
     def setup_screen(self):
         self.__screen__ = Screen(self)
         self.__screen__.grid(row=0, column=0, rowspan=2, columnspan=2, padx=5, pady=5, sticky='news')
-        # __screen__.pack(side='left', fill='x', expand=1, padx=5, pady=5)
 
     def setup_controls(self, controls_controller):
         self.__controls__ = Controls(self, controls_controller)
         self.__controls__.grid(row=2, column=0, rowspan=2, columnspan=2, padx=5, pady=5, sticky='new')
-        # __source__.pack(side='top', fill='x', expand=1, padx=5, pady=5)
 
     def setup_connection(self, socket_controller):
         self.__connection__ = Connection(self, socket_controller)
         self.__connection__.grid(row=0, column=2, rowspan=1,
                             columnspan=2, pady=5, padx=5, sticky='new')
-        # __options__.pack(side='top', fill='x', expand=1, padx=5, pady=5)
 
     def setup_messages(self):
         self.__messages__ = Messages(self)
@@ -66,7 +62,7 @@ class Monitor(tk.Tk):
     def get_screen(self):
         return self.__screen__
     
-    def get_controls(self):
+    def get_controls_view(self):
         return self.__controls__
     
     def get_connection(self):

@@ -17,6 +17,6 @@ class Controller():
     
     def set_view(self, view):
         self.__view__ = view
-        
+        self.__controls_controller__.set_view(view.get_controls_view())
         # self.__socket_controller__.set_view(self.__view__.get)
     
