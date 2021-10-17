@@ -22,7 +22,7 @@ class Controls(LabelFrame):
         # self.rowconfigure(0, weight=1)
         # self.rowconfigure(1, weight=1)
         
-        self.__btn_camera__ = Button(self, compound='left', text='Launch Camera', command=self.__controller__)
+        self.__btn_camera__ = Button(self, compound='left', text='Launch Camera', command=self.__controller__.launch_webcamera)
         self.__btn_camera__.grid(row=0, column=0, rowspan=1, columnspan=2, padx=2, pady=2, sticky='ew')
         
         self.__btn_pi_camera__ = Button(self, compound = 'left', text = 'Launch PiCamera', command=lambda: print('llega'))

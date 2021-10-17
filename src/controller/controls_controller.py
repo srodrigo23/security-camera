@@ -12,6 +12,7 @@ class ControlsController():
         self.__controls_view__ = view
         
     def launch_webcamera(self):
+        print('llega aqui y es importante')
         if self.__is_on__:
             self.__controls_view__.disable_btn_camera()
         

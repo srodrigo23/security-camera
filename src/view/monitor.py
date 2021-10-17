@@ -22,7 +22,7 @@ class Monitor(tk.Tk):
         
         self.setup()
         self.setup_screen()
-        self.setup_controls(self.__controller__.get__controller())
+        self.setup_controls(self.__controller__.get_controls_controller())
         self.setup_connection(self.__controller__.get_socket_controller())
         self.setup_messages()
         self.setup_button_exit()
