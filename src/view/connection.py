@@ -19,14 +19,36 @@ class Connection(LabelFrame):
         __lbl_ip__ = Label(self, text='IP :')
         __lbl_port__ = Label(self, text='Port :')
         
-        __ent_ip__ = Entry(self, width=15)
-        __ent_port__ = Entry(self, width=15)
+        self.__ent_ip__ = Entry(self, width=15)
+        self.__ent_port__ = Entry(self, width=15)
         
         __lbl_ip__.grid(row=0, column=0, padx=2, pady=2, sticky='e')
         __lbl_port__.grid(row=1, column=0, padx=2, pady=2, sticky='e')
         
-        __ent_ip__.grid(row=0, column=1, padx=2, pady=2)
-        __ent_port__.grid(row=1, column=1, padx=2, pady=2)
+        self.__ent_ip__.grid(row=0, column=1, padx=2, pady=2)
+        self.__ent_port__.grid(row=1, column=1, padx=2, pady=2)
 
-        __btn_connect__ = Button(self, text ='Connect')
-        __btn_connect__.grid(row=2, column=0, columnspan=2, sticky='ew' )
+        self.__btn_connect__ = Button(self, text ='Connect', command=self.__controller__.connect_to_server)
+        self.__btn_connect__.grid(row=2, column=0, columnspan=2, sticky='ew' )
+
+    def enable_btn_connect(self):
+        self.__btn_connect__.config(state='normal')
+    
+    def disable_btn_connect(self):
+        self.__btn_connect__.config(state='disable')
+    
+    def enable_ent_ip(self):
+        self.__ent_ip__.config(state='normal')
+    
+    def disable_ent_ip(self):
+        self.__ent_ip__.config(state='disable')
+    
+    def enable_ent_port(self):
+        self.__ent_port__.config(state='normal')
+
+    def disable_ent_port(self):
+        self.__ent_port__.config(state='disable')
+        
+    def set_label_btn_connect(self, text):
+        self.__btn_connect__.config(text=text)
+    

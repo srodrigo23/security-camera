@@ -23,7 +23,7 @@ class Monitor(tk.Tk):
         self.setup()
         self.setup_screen()
         self.setup_controls(self.__controller__.get_controls_controller())
-        self.setup_connection(self.__controller__.get_socket_controller())
+        self.setup_connection(self.__controller__.get_connection_controller())
         self.setup_messages()
         self.setup_button_exit()
                 
@@ -65,7 +65,7 @@ class Monitor(tk.Tk):
     def get_controls_view(self):
         return self.__controls__
     
-    def get_connection(self):
+    def get_connection_view(self):
         return self.__connection__
     
     def get_messages(self):
