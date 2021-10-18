@@ -68,7 +68,7 @@ class Monitor(tk.Tk):
     def get_connection_view(self):
         return self.__connection__
     
-    def get_messages(self):
+    def get_messages_view(self):
         return self.__messages__
     
     def setup_button_exit(self):

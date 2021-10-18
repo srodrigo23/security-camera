@@ -4,7 +4,7 @@ class ControlsController():
     def __init__(self, player=None):
         self.__view__ = None
         
-        self.__player__ = player
+        self.__player__ = player #experimental
         
         self.status_webcam = True # experimental
         self.status_picam = True  # experimental

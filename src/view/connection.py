@@ -1,6 +1,6 @@
 import tkinter as tk
 
-from tkinter import LabelFrame, Label
+from tkinter import LabelFrame, Label, messagebox
 from tkinter.ttk import Button, Entry
 
 class Connection(LabelFrame):
@@ -52,3 +52,8 @@ class Connection(LabelFrame):
     def set_label_btn_connect(self, text):
         self.__btn_connect__.config(text=text)
     
+    def get_connection_info(self):
+        return (None if self.__ent_ip__.get() == '' else self.__ent_ip__.get(), None if self.__ent_port__.get() == '' else self.__ent_port__.get())
+    
+    def show_alert_message(self, text):
+        messagebox.showerror(title='Connecting Error', message=text)
