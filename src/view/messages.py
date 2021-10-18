@@ -1,5 +1,7 @@
 import tkinter as tk
 from tkinter.ttk import Scrollbar
+from threading import Thread
+import time
 
 from tkinter import LabelFrame, Listbox
 
@@ -29,5 +31,17 @@ class Messages(LabelFrame):
         self.__lst_messages__.configure(exportselection=False)
         
         __scroll_bar__.config(command=self.__lst_messages__.yview)
-        __scroll_bar__.pack(side='right', fill='x')
+        __scroll_bar__.pack(side='right', fill='y')
         self.__lst_messages__.pack(expand=0, fill='x', padx=1)
+        
+        # __thread__ = Thread(target=self.add_items, args=())
+        # __thread__.setDaemon(True)
+        # __thread__.start()
+        
+
+    def add_items(self):
+        i=0 
+        while True:
+            i+=1
+            time.sleep(1)
+            self.__lst_messages__.insert('end', f'{i} Sergio')

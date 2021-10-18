@@ -4,13 +4,13 @@ from .messages_controller import MessagesController
 
 class Controller():
     
-    def __init__(self):
+    def __init__(self, settings):
         self.__view__ =  None
         
         self.__connection_controller__ = ConnectionController()
         self.__controls_controller__ = ControlsController()
         self.__messages_controller__ = MessagesController()
-        
+    
     def get_connection_controller(self):
         return self.__connection_controller__
     

@@ -5,13 +5,13 @@ from tkinter.ttk import Button, Entry
 
 class Connection(LabelFrame):
     
-    def __init__(self, parent, controller):
+    def __init__(self, parent, controller, settings):
         tk.LabelFrame.__init__(self, parent)
         self.__title__ = 'Connection'
         self.__controller__ = controller
-        self.setup_connection()
+        self.setup_connection(settings)
 
-    def setup_connection(self):
+    def setup_connection(self, settings):
         self.config(text=self.__title__)
         self.columnconfigure(0, weight=1)
         self.columnconfigure(1, weight=1)
@@ -20,7 +20,9 @@ class Connection(LabelFrame):
         __lbl_port__ = Label(self, text='Port :')
         
         self.__ent_ip__ = Entry(self, width=15)
+        self.__ent_ip__.insert(0, settings.get_host())
         self.__ent_port__ = Entry(self, width=15)
+        self.__ent_port__.insert(0, settings.get_port())
         
         __lbl_ip__.grid(row=0, column=0, padx=2, pady=2, sticky='e')
         __lbl_port__.grid(row=1, column=0, padx=2, pady=2, sticky='e')

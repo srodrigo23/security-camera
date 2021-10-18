@@ -28,13 +28,14 @@ class Controls(LabelFrame):
         self.__btn_pi_camera__ = Button(self, compound = 'left', text = 'Launch PiCamera', command=self.__controller__.launch_picamera)
         self.__btn_pi_camera__.grid(row=1, column=0, rowspan=1, columnspan=2, padx=2, pady=2, sticky='ew')
         
-        self.__btn_video__ = Button(self, compound='left', text='Launch Video', command=self.__controller__.launch_video)
+        self.__btn_video__ = Button(self, compound='left', text='Launch Video',
+                                    command=lambda:self.__controller__.launch_video(self.get_cbx_index_video_selected()))
         self.__btn_video__.grid(row=1, column=2, rowspan=1, columnspan=2, padx=2, pady=2, sticky='ew')
         
         __lbl_source__ = Label(self, text='Source :')
         __lbl_source__.grid(row=0, column=2, padx=2, pady=2)
         
-        __videos__ = ['A', 'B', 'C']
+        __videos__ = self.__controller__.get_videos()
         self.__cbx_video_source__ = Combobox(self, state='readonly', values=__videos__, width=10)
         self.__cbx_video_source__.current(0)
         self.__cbx_video_source__.grid(row=0, column=3, padx=2, pady=2, sticky='ew')
@@ -71,3 +72,6 @@ class Controls(LabelFrame):
     
     def set_label_btn_video(self, text):
         self.__btn_video__.config(text=text)
+
+    def get_cbx_index_video_selected(self):
+        return self.__cbx_video_source__.get()

@@ -1,3 +1,4 @@
+import os
 
 class ControlsController():
     
@@ -41,7 +42,8 @@ class ControlsController():
             self.__controls_view__.enable_cbx_video_source()
             self.__controls_view__.set_label_btn_picamera('Start PiCamera')
 
-    def launch_video(self):
+    def launch_video(self, video_selected):
+        # video_selected recibido correctamente
         if self.status_video:
             self.status_video = False
             self.__controls_view__.disable_btn_webcamera()
@@ -54,3 +56,6 @@ class ControlsController():
             self.__controls_view__.enable_btn_picamera()
             self.__controls_view__.enable_cbx_video_source()
             self.__controls_view__.set_label_btn_video('Start video')
+    
+    def get_videos(self):
+        return os.listdir(os.path.sep.join([os.path.abspath('.'), 'video']))
