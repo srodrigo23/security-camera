@@ -1,47 +1,50 @@
+from .web_camera import WebCamera
 
-class Camera:
+class Camera():
+    
     """
     Interface to manage webcam and picam
     """
-    def __init__(self, mode, src, settings):
+    def __init__(self):
         """
-        Construtor to create a cam
+            Construtor to create an empty cam
         """
-        if mode == "cam":
-            from web_camera import WebCamera
-            self.cam = WebCamera(src = (0 if src=='0' else src), 
-                                 frame_size = settings.get_frame_size())
-        elif mode == "picam":
-            from pi_camera import PiCamera
-            self.cam = PiCamera(resolution = settings.get_resolution(), 
-                                framerate = settings.get_frame_rate())
+        self.__cam__ = None
+    
+    def set_webcam(self, src=0):
+        
+        self.__cam__ = WebCamera(src)
+        
+    def set_picam(self, resolution=(320, 240), framerate=32):
+    
+        self.__cam__ = PiCamera(resolution, framerate)
         
     def start(self):
         """
         Method to start camera
         """
-        return self.cam.start()
+        return self.__cam__.start()
     
     def update(self):
         """
         Method to update frame only in picamera
         """
-        self.cam.update()
+        self.__cam__.update()
     
     def get_frame(self):
         """
         Return frame stored in a queue
         """
-        return self.cam.read()
+        return self.__cam__.read()
     
     def stop(self):
         """
         Stop camera and close
         """
-        self.cam.stop()
+        self.__cam__.stop()
     
     def there_is_frames(self):
         """
         Return if there is more frames
         """
-        return self.cam.is_more()
+        return self.__cam__.is_more()

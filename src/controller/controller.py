@@ -2,13 +2,17 @@ from .connection_controller import ConnectionController
 from .controls_controller import ControlsController
 from .messages_controller import MessagesController
 
+from model.camera import Camera
+
 class Controller():
     
     def __init__(self, settings):
         self.__view__ =  None
         
+        self.__camera__ = Camera()
+        
         self.__connection_controller__ = ConnectionController()
-        self.__controls_controller__ = ControlsController()
+        self.__controls_controller__ = ControlsController(self.__camera__)
         self.__messages_controller__ = MessagesController()
     
     def get_connection_controller(self):

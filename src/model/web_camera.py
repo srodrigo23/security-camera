@@ -1,6 +1,6 @@
 from multiprocessing import Process, Queue 
 from threading import Thread
-from loger import print_log
+from .loger import print_log
 
 import sys
 import cv2
@@ -17,11 +17,9 @@ class WebCamera():
         """
             Constructor to webcamera with resolution
         """
-        self.time_sleep = 1
+        self.__src__ = src
         self.frame_size = frame_size
-        self.frames_queue = Queue(maxsize=64)
-        self.feed = cv2.VideoCapture(src)
-        self.ready = True
+        self.__frames_queue__ = Queue(maxsize=64)
             
     def start(self): 
         """
@@ -44,6 +42,7 @@ class WebCamera():
         """
             Method to catch frames in 2 ways
         """
+        self.feed = cv2.VideoCapture(src)
         # if self.src == '0' : time.sleep(2.0)  # to charge the camera
         while self.ready:
             time.sleep(self.time_sleep) 

@@ -4,12 +4,12 @@ from threading import Thread
 
 class PiCamera():
     
-    def __init__(self, resolution=(320, 240), framerate=32):
+    def __init__(self, resolution, framerate):
         """
-        Constructor to picamera with resolution and framerate by default
+            Constructor to picamera with resolution and framerate by default
         """
-        self.camera = PiCamera()
-        self.camera.resolution = resolution
+        self.__camera__ = PiCamera()
+        self.__camera__.resolution = resolution
         self.camera.framerate = framerate
         self.raw_capture = PiRGBArray(self.camera, size=resolution)
         self.stream = self.camera.capture_continuous(

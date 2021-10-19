@@ -2,10 +2,11 @@ import os
 
 class ControlsController():
     
-    def __init__(self, player=None):
+    def __init__(self, camera):
         self.__view__ = None
         
-        self.__player__ = player #experimental
+        
+        self.__camera__ = camera #experimental
         
         self.status_webcam = True # experimental
         self.status_picam = True  # experimental
