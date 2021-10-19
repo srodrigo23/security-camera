@@ -20,6 +20,8 @@ class WebCamera():
         self.__src__ = src
         self.frame_size = frame_size
         self.__frames_queue__ = Queue(maxsize=64)
+        
+        self.__playing__ = False
             
     def start(self): 
         """
@@ -27,7 +29,7 @@ class WebCamera():
         """
         self.thread = Thread(target=self.catch_frames, args =())
         self.thread.daemon=True
-        self.thread.start()    
+        self.thread.start()
         
     def rescale_frame(self, frame, percent=75):
         """

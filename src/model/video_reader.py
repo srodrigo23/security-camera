@@ -12,11 +12,10 @@ else:
 
 class VideoReader:
 
-    def __init__(self, path_video, num):
+    def __init__(self, path_video):
     
         self.__path__ = path_video
         self.__frames__ = Queue(maxsize = 10)
-        self.setup_frame_queues()
 
     def start_reader(self):
         __thread__ = Thread(target=self.read_frames, args=(__frames__))

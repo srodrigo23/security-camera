@@ -12,7 +12,7 @@ class Camera():
         self.__cam__ = None
     
     def set_webcam(self, src=0):
-        
+         
         self.__cam__ = WebCamera(src)
         
     def set_picam(self, resolution=(320, 240), framerate=32):

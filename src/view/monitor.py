@@ -72,6 +72,9 @@ class Monitor(tk.Tk):
     def get_messages_view(self):
         return self.__messages__
     
+    def get_screen_view(self):
+        return self.__screen__
+    
     def setup_button_exit(self):
         __btn_exit__ = Button(self, text='EXIT', command=self.destroy)
         __btn_exit__.grid(row=3, column=2, rowspan=2, columnspan=2, padx=5, pady=5, sticky='news')

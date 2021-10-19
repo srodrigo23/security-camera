@@ -1,6 +1,6 @@
 
 
-class MonitorController():
+class ScreenController():
     
     def __init__(self):
         self.__view__ = None
