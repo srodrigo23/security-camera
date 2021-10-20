@@ -15,7 +15,7 @@ class RPiCamera():
         self.__camera__.framerate = framerate
         self.__raw_capture__ = PiRGBArray(self.__camera__, size=resolution)
         self.__stream__ = self.__camera__.capture_continuous(
-            self.raw_capture, 
+            self.__raw_capture__, 
             format="bgr", 
             use_video_port=True)
         self.__frame__ = None
@@ -50,7 +50,7 @@ class RPiCamera():
         """
         Method to stop stream
         """
-        self.__working__ = True
+        self.__stopped__ = True
     
     def close(self):
         """
