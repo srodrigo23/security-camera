@@ -7,9 +7,8 @@ class ControlsController():
         
         self.__camera__ = camera
         self.__screen_controller__ = screen_controller
-        
+        self.__path_system__ = os.path.abspath('.')
         self.status_picam = True  # experimental
-        self.status_video = True  # experimental
     
     def set_view(self, view):
         self.__controls_view__ = view
@@ -30,9 +29,28 @@ class ControlsController():
             self.__controls_view__.enable_btn_video()
             self.__controls_view__.enable_cbx_video_source()
             self.__controls_view__.set_label_btn_webcamera('Start WebCamera')
+            
+    def launch_video(self, video_selected):
+        
+        if self.__camera__.is_none():    
+            __path_video_selected__ = os.path.sep.join([self.__path_system__, 'video', video_selected])
+            print(__path_video_selected__)
+            self.__camera__.set_webcam(src=__path_video_selected__)
+            self.__camera__.start()
+            self.__controls_view__.disable_btn_webcamera()
+            self.__controls_view__.disable_btn_picamera()
+            self.__controls_view__.disable_cbx_video_source()
+            self.__controls_view__.set_label_btn_video('Stop Video')
+            
+            self.__screen_controller__.start_show_frames()
+        else:
+            self.__camera__.stop()
+            self.__controls_view__.enable_btn_webcamera()
+            self.__controls_view__.enable_btn_picamera()
+            self.__controls_view__.enable_cbx_video_source()
+            self.__controls_view__.set_label_btn_video('Start video')
     
     def launch_picamera(self):
-        
         """
             To review
         """
@@ -49,20 +67,5 @@ class ControlsController():
             self.__controls_view__.enable_cbx_video_source()
             self.__controls_view__.set_label_btn_picamera('Start PiCamera')
 
-    def launch_video(self, video_selected):
-        # video_selected recibido correctamente
-        if self.status_video:
-            self.status_video = False
-            self.__controls_view__.disable_btn_webcamera()
-            self.__controls_view__.disable_btn_picamera()
-            self.__controls_view__.disable_cbx_video_source()
-            self.__controls_view__.set_label_btn_video('Stop video')
-        else:
-            self.status_video = True
-            self.__controls_view__.enable_btn_webcamera()
-            self.__controls_view__.enable_btn_picamera()
-            self.__controls_view__.enable_cbx_video_source()
-            self.__controls_view__.set_label_btn_video('Start video')
-    
     def get_videos(self):
-        return os.listdir(os.path.sep.join([os.path.abspath('.'), 'video']))
+        return os.listdir(os.path.sep.join([self.__path_system__, 'video']))

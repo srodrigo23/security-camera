@@ -11,7 +11,6 @@ class Controls(LabelFrame):
         self.__controller__ = controller
         self.setup_controls()
     
-    
     def setup_controls(self):
         self.config(text=self.__title__)
 
@@ -28,8 +27,7 @@ class Controls(LabelFrame):
         self.__btn_pi_camera__ = Button(self, compound = 'left', text = 'Launch PiCamera', command=self.__controller__.launch_picamera)
         self.__btn_pi_camera__.grid(row=1, column=0, rowspan=1, columnspan=2, padx=2, pady=2, sticky='ew')
         
-        self.__btn_video__ = Button(self, compound='left', text='Launch Video',
-                                    command=lambda:self.__controller__.launch_video(self.get_cbx_index_video_selected()))
+        self.__btn_video__ = Button(self, compound='left', text='Launch Video',command=lambda:self.__controller__.launch_video(self.get_cbx_index_video_selected()))
         self.__btn_video__.grid(row=1, column=2, rowspan=1, columnspan=2, padx=2, pady=2, sticky='ew')
         
         __lbl_source__ = Label(self, text='Source :')

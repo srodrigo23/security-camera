@@ -19,7 +19,9 @@ class WebCamera():
         """
         self.__src__ = src
         self.__size__ = size
-        self.__frames_queue__ = Queue(maxsize=64)
+        
+        # self.__frames_queue__ = Queue(maxsize=128)
+        self.__frame__ = None
         self.__stopped__ = False
         self.__working__ = False
             
@@ -43,16 +45,16 @@ class WebCamera():
             Method to catch frames in 2 ways
         """
         self.__feed__ = cv2.VideoCapture(self.__src__)
-        
+        self.__fps__ = int(self.__feed__.get(cv2.CAP_PROP_FPS))
         if self.__src__ == 0 : time.sleep(2.0)  # to charge the camera
         
         while not self.__stopped__:
-            time.sleep(0.2) 
             __ret__, __frame__ = self.__feed__.read()
             if __ret__:
+                time.sleep(1/self.__fps__)
                 __frame__ = self.rescale_frame(__frame__)
-                __frame__ = cv2.cvtColor(__frame__, cv2.COLOR_BGR2RGB)
-                self.__frames_queue__.put(__frame__)
+                self.__frame__ = cv2.cvtColor(__frame__, cv2.COLOR_BGR2RGB)
+                # self.__frames_queue__.put(__frame__)
             else:    
                 self.stop()
         self.close()
@@ -61,7 +63,8 @@ class WebCamera():
         """
             Method to return a frame from webcam queue
         """
-        return self.__frames_queue__.get()
+        # return self.__frames_queue__.get()
+        return self.__frame__
     
     def is_more(self):
         """

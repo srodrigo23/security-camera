@@ -17,8 +17,12 @@ class ScreenController():
         self.__thread__.start()
     
     def show_frames(self):
-        while not self.__camera__.is_none():
-            time.sleep(0.2)
-            frame = self.__camera__.get_frame()
-            self.__screen_view__.show_frame(frame) # show frame in screen
-        
+        while True:
+            time.sleep(0.5)
+            if not self.__camera__.is_none():
+                frame = self.__camera__.get_frame()
+                if not frame is None:
+                    self.__screen_view__.show_frame(frame) # show frame in screen
+            else:
+                break
+        self.__screen_view__.show_init_frame()
