@@ -2,13 +2,12 @@ import os
 
 class ControlsController():
     
-    def __init__(self, camera):
+    def __init__(self, camera, screen_controller):
         self.__view__ = None
         
+        self.__camera__ = camera
+        self.__screen_controller__ = screen_controller
         
-        self.__camera__ = camera #experimental
-        
-        self.status_webcam = True # experimental
         self.status_picam = True  # experimental
         self.status_video = True  # experimental
     
@@ -16,20 +15,27 @@ class ControlsController():
         self.__controls_view__ = view
         
     def launch_webcamera(self):
-        if self.status_webcam:
-            self.status_webcam = False
+        if self.__camera__.is_none():
+            self.__camera__.set_webcam()
+            self.__camera__.start()
             self.__controls_view__.disable_btn_picamera()
             self.__controls_view__.disable_btn_video()
             self.__controls_view__.disable_cbx_video_source()
             self.__controls_view__.set_label_btn_webcamera('Stop WebCamera')
+            
+            self.__screen_controller__.start_show_frames()
         else:
-            self.status_webcam = True
+            self.__camera__.stop() # stop to show frames too
             self.__controls_view__.enable_btn_picamera()
             self.__controls_view__.enable_btn_video()
             self.__controls_view__.enable_cbx_video_source()
             self.__controls_view__.set_label_btn_webcamera('Start WebCamera')
     
     def launch_picamera(self):
+        
+        """
+            To review
+        """
         if self.status_picam:
             self.status_picam = False
             self.__controls_view__.disable_btn_webcamera()

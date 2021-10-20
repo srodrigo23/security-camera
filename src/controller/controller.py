@@ -12,10 +12,11 @@ class Controller():
         
         self.__camera__ = Camera()
         
-        self.__connection_controller__ = ConnectionController()
-        self.__controls_controller__ = ControlsController(self.__camera__)
+        self.__connection_controller__ = ConnectionController(self.__camera__)
+        self.__screen_controller__ = ScreenController(self.__camera__)
+        self.__controls_controller__ = ControlsController(self.__camera__, self.__screen_controller__)
         self.__messages_controller__ = MessagesController()
-        self.__screen_controller__ = ScreenController()
+        
     
     def get_connection_controller(self):
         return self.__connection_controller__
@@ -35,4 +36,3 @@ class Controller():
         self.__connection_controller__.set_view(view.get_connection_view())
         self.__messages_controller__.set_view(view.get_messages_view())
         self.__screen_controller__.set_view(view.get_screen_view())
-        

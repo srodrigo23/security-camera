@@ -10,18 +10,18 @@ class PiCamera():
         """
         self.__camera__ = PiCamera()
         self.__camera__.resolution = resolution
-        self.camera.framerate = framerate
-        self.raw_capture = PiRGBArray(self.camera, size=resolution)
-        self.stream = self.camera.capture_continuous(
+        self.__camera__.framerate = framerate
+        self.__raw_capture__ = PiRGBArray(self.__camera__, size=resolution)
+        self.__stream__ = self.__camera__.capture_continuous(
             self.raw_capture, 
             format="bgr", 
             use_video_port=True)
-        self.frame = None
-        self.stopped = False
+        self.__frame__ = None
+        self.__stopped__ = False
     
     def start(self):
         """
-        Method to init thread picamera
+            Method to init thread picamera
         """
         self.thread = Thread(target=self.update, args=())
         self.thread.setDaemon(True)
@@ -29,31 +29,31 @@ class PiCamera():
         
     def update(self):
         """
-        Method to update frame to stream
+            Method to update frame to stream
         """
-        for f in self.stream:
-            self.frame = f.array
-            self.raw_capture.truncate(0)
-            if self.stopped:
+        for f in self.__stream__:
+            self.__frame__ = f.array
+            self.__raw_capture__.truncate(0)
+            if self.__stopped__:
                 self.close()
                 return
                        
-    def read(self):
+    def get_frame(self):
         """
         Method to get frame
         """
-        return self.frame
+        return self.__frame__
     
     def stop(self):
         """
         Method to stop stream
         """
-        self.stopped = True
+        self.__working__ = True
     
     def close(self):
         """
         Method to close stream object, raw capture and camera
         """
-        self.stream.close()
-        self.raw_capture.close()
-        self.camera.close()
+        self.__stream__.close()
+        self.__raw_capture__.close()
+        self.__camera__.close()

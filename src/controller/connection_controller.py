@@ -2,9 +2,10 @@ from model.socket import Socket
 
 class ConnectionController():
     
-    def __init__(self):
+    def __init__(self, camera):
         self.__view__ = None
         
+        self.__camera__ = camera
         self.__socket__ = Socket() #TODO experimental
         self.connected = False # experimental
     

@@ -11,9 +11,9 @@ class Camera():
         """
         self.__cam__ = None
     
-    def set_webcam(self, src=0):
+    def set_webcam(self, src=0, size=(320, 240)):
          
-        self.__cam__ = WebCamera(src)
+        self.__cam__ = WebCamera(src, size)
         
     def set_picam(self, resolution=(320, 240), framerate=32):
     
@@ -35,16 +35,23 @@ class Camera():
         """
         Return frame stored in a queue
         """
-        return self.__cam__.read()
+        return self.__cam__.get_frame()
     
     def stop(self):
         """
         Stop camera and close
         """
         self.__cam__.stop()
+        self.__cam__ = None
+    
+    def get_status(self):
+        return self.__cam__.get_status_working()
     
     def there_is_frames(self):
         """
         Return if there is more frames
         """
         return self.__cam__.is_more()
+    
+    def is_none(self):
+        return self.__cam__ is None
