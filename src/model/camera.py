@@ -1,4 +1,3 @@
-from .web_camera import WebCamera
 
 class Camera():
     
@@ -12,12 +11,12 @@ class Camera():
         self.__cam__ = None
     
     def set_webcam(self, src=0, size=(320, 240)):
-         
-        self.__cam__ = WebCamera(src, size)
+        from .web_camera import WebCamera
+        self.__cam__ = WebCamera(src, size, self)
         
     def set_picam(self, resolution=(320, 240), framerate=32):
-    
-        self.__cam__ = PiCamera(resolution, framerate)
+        from .rpi_camera import RPiCamera
+        self.__cam__ = RPiCamera(resolution, framerate)
         
     def start(self):
         """

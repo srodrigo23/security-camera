@@ -7,9 +7,12 @@ class ScreenController():
     def __init__(self, camera):
         self.__view__ = None
         self.__camera__ = camera
-    
+        
     def set_view(self, view):
         self.__screen_view__ = view
+    
+    def set_controls_controller(self, controls_controller):
+        self.__controls_controller__ = controls_controller 
         
     def start_show_frames(self):
         self.__thread__ = Thread(target=self.show_frames, args=())
@@ -26,3 +29,4 @@ class ScreenController():
             else:
                 break
         self.__screen_view__.show_init_frame()
+        self.__controls_controller__.enable_behaviour_launch_video()

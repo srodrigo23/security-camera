@@ -13,17 +13,19 @@ else:
 
 class WebCamera():
     
-    def __init__(self, src, size):
+    def __init__(self, src, size, interface):
         """
             Constructor to webcamera with resolution
         """
         self.__src__ = src
         self.__size__ = size
         
+        self.__interface__ = interface
+        
         # self.__frames_queue__ = Queue(maxsize=128)
         self.__frame__ = None
         self.__stopped__ = False
-        self.__working__ = False
+        # self.__working__ = False
             
     def start(self): 
         """
@@ -56,7 +58,8 @@ class WebCamera():
                 self.__frame__ = cv2.cvtColor(__frame__, cv2.COLOR_BGR2RGB)
                 # self.__frames_queue__.put(__frame__)
             else:    
-                self.stop()
+                # self.stop()
+                self.__interface__.stop()
         self.close()
     
     def get_frame(self):
@@ -77,10 +80,10 @@ class WebCamera():
             Method to stop catch frames
         """
         self.__stopped__ = True
-        self.__working__ = False
+        # self.__working__ = False
     
-    def get_status_working(self):
-        return self.__working__    
+    # def get_status_working(self):
+    #     return self.__working__    
     
     def close(self):
         self.__feed__.release()

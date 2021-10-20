@@ -17,6 +17,8 @@ class Controller():
         self.__controls_controller__ = ControlsController(self.__camera__, self.__screen_controller__)
         self.__messages_controller__ = MessagesController()
         
+        self.__screen_controller__.set_controls_controller(self.__controls_controller__)
+        
     
     def get_connection_controller(self):
         return self.__connection_controller__

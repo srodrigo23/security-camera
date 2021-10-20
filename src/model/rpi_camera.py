@@ -1,8 +1,10 @@
+
 from picamera.array import PiRGBArray
 from picamera import PiCamera
+
 from threading import Thread
 
-class PiCamera():
+class RPiCamera():
     
     def __init__(self, resolution, framerate):
         """

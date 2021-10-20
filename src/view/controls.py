@@ -1,6 +1,6 @@
 import tkinter as tk
 
-from tkinter import LabelFrame, Label
+from tkinter import LabelFrame, Label, messagebox
 from tkinter.ttk import Combobox, Button
 
 class Controls(LabelFrame):
@@ -37,6 +37,9 @@ class Controls(LabelFrame):
         self.__cbx_video_source__ = Combobox(self, state='readonly', values=__videos__, width=10)
         self.__cbx_video_source__.current(0)
         self.__cbx_video_source__.grid(row=0, column=3, padx=2, pady=2, sticky='ew')
+    
+    def show_rpi_support_error(self, text):
+        messagebox.showerror(title='Connecting Error', message=text)
         
     def enable_btn_webcamera(self):
         self.__btn_camera__.config(state='normal')
