@@ -50,7 +50,13 @@ class Connection(LabelFrame):
 
     def disable_ent_port(self):
         self.__ent_port__.config(state='disable')
-        
+    
+    def disable_btn_connect(self):
+        self.__btn_connect__.config(state="disable")
+    
+    def enable_btn_connect(self):
+        self.__btn_connect__.config(state="normal")
+    
     def set_label_btn_connect(self, text):
         self.__btn_connect__.config(text=text)
     

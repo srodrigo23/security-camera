@@ -1,6 +1,5 @@
 from threading import Thread
-from _thread import start_new_thread
-from loger import print_log
+# from model.logger import print_log
 
 import socket
 import time
@@ -10,68 +9,31 @@ import cv2
 
 class Connection():
     
-    def __init__(self, host, port, quality, node):
+    def __init__(self, camera):
         """
-        Constructor to get 
+        Constructor to connection
         """
-        self.host = host
-        self.port = port
-        self.quality = quality # bad smell
-        self.node = node
-    
-    def execute(self):
+        self.__camera__ = camera
+        self.__socket_connected__ = None
+        
+    def set_socket_connected(self, socket):
+        self.__socket_connected__ = socket
+        
+    def run_send_frames(self):
         """
         Method to prepare and execute connection, running a thread
         """
-        self.socket = None
-        self.connected = False
-        self.send_frame = False
-        
-        self.thread_connection = Thread(target=self.connect_socket, args=())
-        self.thread_connection.daemon = True
-        self.thread_connection.start()
-        # start_new_thread(self.connect_socket, ())
-
-    def connect_socket(self):
-        """
-        Method to live like a thread to attempt connect to the server
-        """
-        while not self.connected:
-            self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            try:
-                print(f'intentando conectarse')
-                time.sleep(2.0)
-                self.socket.connect((self.host, self.port))
-            except socket.error as e:
-                print_log('e', f'Connection don\'t reached {str(e)}')
-            else:
-                self.connected = True
-                print('listo para escuchar')
-                start_new_thread(self.listen_messages, ())
-    
-    def listen_messages(self):
-        """
-            Method to live like a thread to listen messages and manage it by two conditions
-        """
-        while self.connected:
-            print('listening messages')
-            message = self.socket.recv(1024)
-            message = message.decode('utf-8')
+        if self.is_connectted():
+            __connection__ = Thread(target=self.send_frames, args=())
+            __connection__.daemon = True
+            __connection__.start()
             
-            if message == 'send':
-                self.send_frame = True
-                start_new_thread(self.send_frames, ())
-            elif message == 'stop':
-                self.send_frame = False
-                
     def send_frames(self):
         """
         Method to send frames while the message is live
         """        
-        while self.send_frame:
-            self.socket.sendall(b'hola soy la camara')
-            time.sleep(0.5)
-            # send_frame(self.node.camera.get_frame())
+        while self.is_connectted():
+            self.send_frame(self.__camera__.get_frame())
                
     def send_frame(self, frame):
         """
@@ -81,4 +43,10 @@ class Connection():
         encode_param = [int(cv2.IMWRITE_JPEG_QUALITY), quality]
         result, image = cv2.imencode('.jpg', frame, encode_param)
         data = pickle.dumps(image, 0)
-        self.socket.sendall(struct.pack(">L", len(data)) + data)
+        self.__socket_connected__.sendall(struct.pack(">L", len(data)) + data)
+        
+    def is_connected(self):
+        """
+        Check if this node is connected
+        """
+        return not self.__socket_connected__ is None

@@ -13,12 +13,10 @@ class Messages(LabelFrame):
     def __init__(self, parent):
         tk.LabelFrame.__init__(self, parent)
         self.__title__ = "Messages"
-        
+        self.__cnt_elements__ = 0
         self.setup_messages()
     
-    
     def setup_messages(self):
-        
         self.config(text=self.__title__)
         
         __scroll_bar__ = Scrollbar(self, orient='vertical')
@@ -33,15 +31,9 @@ class Messages(LabelFrame):
         __scroll_bar__.config(command=self.__lst_messages__.yview)
         __scroll_bar__.pack(side='right', fill='y')
         self.__lst_messages__.pack(expand=0, fill='x', padx=1)
-        
-        # __thread__ = Thread(target=self.add_items, args=())
-        # __thread__.setDaemon(True)
-        # __thread__.start()
-        
-
-    def add_items(self):
-        i=0 
-        while True:
-            i+=1
-            time.sleep(1)
-            self.__lst_messages__.insert('end', f'{i} Sergio')
+    
+    def add_message(self, text):
+        # if self.__cnt_elements__ % 10 == 0:
+        #     self.__lst_messages__.delete(0, 'end')
+        self.__lst_messages__.insert('end', text)
+        self.__cnt_elements__ += 1

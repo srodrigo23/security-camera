@@ -4,18 +4,20 @@ from .messages_controller import MessagesController
 from .screen_controller import ScreenController
 
 from model.camera import Camera
+from model.connection import Connection
 
 class Controller():
     
-    def __init__(self, settings):
+    def __init__(self):
         self.__view__ =  None
         
         self.__camera__ = Camera()
+        self.__connection__ = Connection(camera=self.__camera__)
         
-        self.__connection_controller__ = ConnectionController(self.__camera__)
-        self.__screen_controller__ = ScreenController(self.__camera__)
-        self.__controls_controller__ = ControlsController(self.__camera__, self.__screen_controller__)
-        self.__messages_controller__ = MessagesController()
+        self.__messages_controller__   = MessagesController()
+        self.__connection_controller__ = ConnectionController(self.__connection__, self.__messages_controller__)
+        self.__screen_controller__     = ScreenController(self.__camera__)
+        self.__controls_controller__   = ControlsController(self.__camera__, self.__screen_controller__)
         
         self.__screen_controller__.set_controls_controller(self.__controls_controller__)
         

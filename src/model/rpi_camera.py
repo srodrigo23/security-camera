@@ -8,7 +8,7 @@ class RPiCamera():
     
     def __init__(self, resolution, framerate):
         """
-            Constructor to picamera with resolution and framerate by default
+        Constructor to picamera with resolution and framerate by default
         """
         self.__camera__ = PiCamera()
         self.__camera__.resolution = resolution
@@ -23,7 +23,7 @@ class RPiCamera():
     
     def start(self):
         """
-            Method to init thread picamera
+        Method to init thread picamera
         """
         self.thread = Thread(target=self.update, args=())
         self.thread.setDaemon(True)
@@ -31,7 +31,7 @@ class RPiCamera():
         
     def update(self):
         """
-            Method to update frame to stream
+        Method to update frame to stream
         """
         for f in self.__stream__:
             self.__frame__ = f.array
@@ -48,7 +48,7 @@ class RPiCamera():
     
     def stop(self):
         """
-        Method to stop stream
+            Method to stop stream
         """
         self.__stopped__ = True
     

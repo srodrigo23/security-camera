@@ -6,7 +6,7 @@ class Camera():
     """
     def __init__(self):
         """
-            Construtor to create an empty cam
+        Construtor to create an empty cam
         """
         self.__cam__ = None
     
@@ -53,4 +53,7 @@ class Camera():
         return self.__cam__.is_more()
     
     def is_none(self):
+        """
+        Return True if there is no Camera instance
+        """
         return self.__cam__ is None
