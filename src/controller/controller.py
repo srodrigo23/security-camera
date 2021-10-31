@@ -10,11 +10,12 @@ class Controller():
     
     def __init__(self):
         self.__view__ =  None
+    
+        self.__messages_controller__   = MessagesController()
         
         self.__camera__ = Camera()
-        self.__connection__ = Connection(camera=self.__camera__)
+        self.__connection__ = Connection(camera=self.__camera__, messages=self.__messages_controller__)
         
-        self.__messages_controller__   = MessagesController()
         self.__connection_controller__ = ConnectionController(self.__connection__, self.__messages_controller__)
         self.__screen_controller__     = ScreenController(self.__camera__)
         self.__controls_controller__   = ControlsController(self.__camera__, self.__screen_controller__)
