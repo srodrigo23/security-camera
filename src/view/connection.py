@@ -4,14 +4,23 @@ from tkinter import LabelFrame, Label, messagebox
 from tkinter.ttk import Button, Entry
 
 class Connection(LabelFrame):
+    """
+    Connection class view to show connection info
+    """
     
     def __init__(self, parent, controller, settings):
+        """
+        Method to init connection receive parent, controller settings
+        """
         tk.LabelFrame.__init__(self, parent)
         self.__title__ = 'Connection'
         self.__controller__ = controller
         self.setup_connection(settings)
 
     def setup_connection(self, settings):
+        """
+        Method to setup connection view on the screen with settings info
+        """
         self.config(text=self.__title__)
         self.columnconfigure(0, weight=1)
         self.columnconfigure(1, weight=1)
@@ -34,34 +43,67 @@ class Connection(LabelFrame):
         self.__btn_connect__.grid(row=2, column=0, columnspan=2, sticky='ew' )
 
     def enable_btn_connect(self):
+        """
+        Method to enable button connect
+        """
         self.__btn_connect__.config(state='normal')
     
     def disable_btn_connect(self):
+        """
+        Method to disable button connect
+        """
         self.__btn_connect__.config(state='disable')
     
     def enable_ent_ip(self):
+        """
+        Method to enable input ip
+        """
         self.__ent_ip__.config(state='normal')
     
     def disable_ent_ip(self):
+        """
+        Method to disable input ip
+        """
         self.__ent_ip__.config(state='disable')
     
     def enable_ent_port(self):
+        """
+        Method to enable input port
+        """
         self.__ent_port__.config(state='normal')
 
     def disable_ent_port(self):
+        """
+        Method to disable input port
+        """
         self.__ent_port__.config(state='disable')
-    
-    def disable_btn_connect(self):
-        self.__btn_connect__.config(state="disable")
-    
+
     def enable_btn_connect(self):
+        """
+        Method to enable button connect
+        """
         self.__btn_connect__.config(state="normal")
     
+    def disable_btn_connect(self):
+        """
+        Method to disable button connect
+        """
+        self.__btn_connect__.config(state="disable")
+    
     def set_label_btn_connect(self, text):
+        """
+        Method to set label text on button connect
+        """
         self.__btn_connect__.config(text=text)
     
     def get_connection_info(self):
+        """
+        Method to get connection info on the screen
+        """
         return (None if self.__ent_ip__.get() == '' else self.__ent_ip__.get(), None if self.__ent_port__.get() == '' else self.__ent_port__.get())
     
     def show_alert_message(self, text):
+        """
+        Method to show alert message
+        """
         messagebox.showerror(title='Connecting Error', message=text)

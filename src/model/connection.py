@@ -1,5 +1,5 @@
 from threading import Thread
-# from model.logger import print_log
+from util.logger import print_log
 
 import socket
 import time
@@ -18,6 +18,9 @@ class Connection():
         self.__messages_controller__ = messages
         
     def set_socket_connected(self, socket):
+        """
+        Set 
+        """
         self.__socket_connected__ = socket
         
     def run_send_frames(self):

@@ -2,10 +2,13 @@ from view.monitor import Monitor
 from controller.controller import Controller
 from settings import Settings
 
+"""
+Method to launch a single instance of player camera
+"""
 
 def run_camera():
     """
-        Start node with command and gui interface
+    Start node with command and gui interface
     """
     __settings__ = Settings()
     __controller__ = Controller()

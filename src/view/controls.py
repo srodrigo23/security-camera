@@ -4,14 +4,23 @@ from tkinter import LabelFrame, Label, messagebox
 from tkinter.ttk import Combobox, Button
 
 class Controls(LabelFrame):
+    """
+    Controls View Class
+    """
     
     def __init__(self, parent, controller):
+        """
+        Method to init Controls view recive parent link and controller
+        """
         tk.LabelFrame.__init__(self, parent)
         self.__title__ = 'Controls'
         self.__controller__ = controller
         self.setup_controls()
     
     def setup_controls(self):
+        """
+        Method to setup controls on the screen (open video, webcam, picam)
+        """
         self.config(text=self.__title__)
 
         self.columnconfigure(0, weight=1)
@@ -39,40 +48,79 @@ class Controls(LabelFrame):
         self.__cbx_video_source__.grid(row=0, column=3, padx=2, pady=2, sticky='ew')
     
     def show_rpi_support_error(self, text):
+        """
+        Method to show error if dont support raspberry cam
+        """
         messagebox.showerror(title='Connecting Error', message=text)
         
     def enable_btn_webcamera(self):
+        """
+        Method to enable web camera
+        """
         self.__btn_camera__.config(state='normal')
     
     def disable_btn_webcamera(self):
+        """
+        Method to disable web camera
+        """
         self.__btn_camera__.config(state='disable')
     
     def enable_btn_picamera(self):
+        """
+        Method to enable picamera
+        """
         self.__btn_pi_camera__.config(state='normal')
         
     def disable_btn_picamera(self):
+        """
+        Method to disable picamera
+        """
         self.__btn_pi_camera__.config(state='disable')
         
     def enable_btn_video(self):
+        """
+        Method to enable video
+        """
         self.__btn_video__.config(state='normal')
 
     def disable_btn_video(self):
+        """
+        Method to disable video
+        """
         self.__btn_video__.config(state='disable')
     
     def enable_cbx_video_source(self):
+        """
+        Method to enable combobox to select video
+        """
         self.__cbx_video_source__.config(state='normal')
     
     def disable_cbx_video_source(self):
+        """
+        Method to disable combobox to select video
+        """
         self.__cbx_video_source__.config(state='disable')
     
     def set_label_btn_webcamera(self, text):
+        """
+        Method to set label on button webcamera
+        """
         self.__btn_camera__.config(text=text)
     
     def set_label_btn_picamera(self, text):
+        """
+        Method to set label on button picamera
+        """
         self.__btn_pi_camera__.config(text=text)
     
     def set_label_btn_video(self, text):
+        """
+        Method to set label on button video
+        """
         self.__btn_video__.config(text=text)
 
     def get_cbx_index_video_selected(self):
+        """
+        Method to return selected item index
+        """
         return self.__cbx_video_source__.get()

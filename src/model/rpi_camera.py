@@ -5,7 +5,9 @@ from picamera import PiCamera
 from threading import Thread
 
 class RPiCamera():
-    
+    """
+    Raspberry pi camera class to use like source of image
+    """
     def __init__(self, resolution, framerate):
         """
         Constructor to picamera with resolution and framerate by default

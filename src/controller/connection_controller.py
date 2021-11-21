@@ -5,16 +5,29 @@ import socket as sckt
 from _thread import start_new_thread
 
 class ConnectionController():
+    """
+    Connection Controller class to control view and conection with the server
+    """
     
     def __init__(self, connection, messages_controller):
+        """
+        Init class t do the connection and show info on the screen
+        """
+        self.__connection_view__ = None
         self.__connection__ = connection
         self.__messages_controller__ = messages_controller
         self.__socket__ = None
         
     def set_view(self, view):
+        """
+        MVC pattern to set control view
+        """
         self.__connection_view__ = view
     
-    def connect_to_server(self):    
+    def connect_to_server(self):
+        """
+        Method to connect to the server socket checking fields
+        """
         if self.__connection__.check_camera_is_ready():  # only with video working
             if self.__connection__.is_connected():
                 self.__socket__ = None
@@ -26,10 +39,9 @@ class ConnectionController():
                     self.disable_controls()  # to connect to the server
                     self.__connection_view__.set_label_btn_connect('Connecting')
                     self.__connection_view__.disable_btn_connect()
-                    start_new_thread(self.attempt_connect_to_socket, (__host__, __port__, 5, 0.5))
+                    start_new_thread(self.attempt_connect_to_socket, (__host__, __port__, 5, 0.5)) #thread!!!
                 else:
                     self.__connection_view__.show_alert_message('Ip and Port error')
-                                    
         else:
             self.__connection_view__.show_alert_message("It can't transmit yet")
                                 
@@ -60,18 +72,27 @@ class ConnectionController():
             self.__connection__.run_send_frames() # start to send frames
             
     def enable_controls(self):
+        """
+        Enable controls to fill ip and port to connect to the socket server
+        """
         self.__connection_view__.set_label_btn_connect('Connect')
         self.__connection_view__.enable_btn_connect()
         self.__connection_view__.enable_ent_ip()
         self.__connection_view__.enable_ent_port()
     
     def disable_controls(self):
+        """
+        Disable controls after attempt to connect to the server socket
+        """
         self.__connection_view__.set_label_btn_connect('Stop Connection')
         self.__connection_view__.enable_btn_connect()
         self.__connection_view__.disable_ent_ip()
         self.__connection_view__.disable_ent_port()
 
     def validate_host_address(self, address):
+        """
+        Method to test host to connect to the server
+        """
         if not address is None:
             __parts__ = address.split(".")    
             if len(__parts__) != 4:
@@ -85,6 +106,9 @@ class ConnectionController():
             return False
 
     def validate_port(self, port):
+        """
+        Method to test port to connect to the server        
+        """
         if not isinstance(int(port), int):
             return False
         else:

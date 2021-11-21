@@ -1,6 +1,6 @@
 from multiprocessing import Process, Queue
 from threading import Thread
-from .logger import print_log
+from util.logger import print_log
 
 import sys
 import cv2
