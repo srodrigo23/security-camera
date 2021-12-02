@@ -3,6 +3,7 @@ import time
 import socket as sckt
 
 from _thread import start_new_thread
+from util.logger import print_log
 
 class ConnectionController():
     """
@@ -58,13 +59,15 @@ class ConnectionController():
                 self.__socket__.connect((host, int(port)))
             except sckt.error as e:
                 self.__messages_controller__.show_message_control(str(e))
+                print_log('i', "Failed Connection")
                 self.__socket__ = None
             else:
                 #set socket to init to transmite images
-                self.__messages_controller__.show_message_control("Connected")
+                self.__messages_controller__.show_message_control("Connected to the server")
+                print_log('i', "Connected to the server")
                 
         if self.__socket__ is None:
-            self.__messages_controller__.show_message_control("Connection Failed")
+            self.__messages_controller__.show_message_control("Failed Connection")
             self.enable_controls()
         else:
             self.disable_controls()

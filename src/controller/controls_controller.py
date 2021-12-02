@@ -1,4 +1,5 @@
 import os
+from util.logger import print_log
 
 class ControlsController():
     """
@@ -28,13 +29,14 @@ class ControlsController():
             self.__controls_view__.disable_btn_video()
             self.__controls_view__.disable_cbx_video_source()
             self.__controls_view__.set_label_btn_webcamera('Stop WebCamera')
-            
+            print_log('i', "Turning-on WebCamera")
             self.__screen_controller__.start_show_frames()
         else:
             self.__camera__.stop() # stop to show frames too
             self.__controls_view__.enable_btn_picamera()
             self.__controls_view__.enable_btn_video()
             self.__controls_view__.enable_cbx_video_source()
+            print_log('i', "Turning-off Webcamera")
             self.__controls_view__.set_label_btn_webcamera('Start WebCamera')
     
     def launch_picamera(self):
@@ -53,7 +55,7 @@ class ControlsController():
             self.__controls_view__.disable_btn_video()
             self.__controls_view__.disable_cbx_video_source()
             self.__controls_view__.set_label_btn_picamera('Stop PiCamera')
-            
+            print_log('i', "Turning-on PiCamera")
             self.__screen_controller__.start_show_frames()
             
         else:
@@ -61,6 +63,7 @@ class ControlsController():
             self.__controls_view__.enable_btn_webcamera()
             self.__controls_view__.enable_btn_video()
             self.__controls_view__.enable_cbx_video_source()
+            print_log('i', "Turning-off WebCamera")
             self.__controls_view__.set_label_btn_picamera('Start PiCamera')
 
             
@@ -73,9 +76,10 @@ class ControlsController():
             self.__camera__.set_webcam(src=__path_video_selected__)
             self.__camera__.start()
             self.disable_behaviour_launch_video()
-            
+            print_log('i', "Turning-on Video Camera")
             self.__screen_controller__.start_show_frames()
         else:
+            print_log('i', "Turning-off Video Camera")
             self.__camera__.stop()
             self.enable_behaviour_launch_video()
     

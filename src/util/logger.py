@@ -1,4 +1,5 @@
 import logging
+import datetime
 
 logging.basicConfig(
     filename='system.log',
@@ -7,6 +8,10 @@ logging.basicConfig(
     datefmt='%m/%d/%Y %I:%M:%S %p')
 
 def print_log(level, message):
+    """
+    Method to print messages from system
+    """
+    d = datetime.datetime.now()
     if level == 'd':  # debug
         logging.debug(message)
     elif level == 'i':  # info
@@ -17,3 +22,4 @@ def print_log(level, message):
         logging.error(message)
     elif level == 'c':  # critical
         logging.critical(message)
+    print(d,':', message)

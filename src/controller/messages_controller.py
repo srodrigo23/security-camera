@@ -1,5 +1,4 @@
 
-
 class MessagesController():
     """
     Messages Controller class to show messages in a list on the screen    

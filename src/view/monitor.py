@@ -11,8 +11,7 @@ class Monitor(tk.Tk):
     """
     Class to view a monitor to show frames
     """
-    
-    def __init__(self, controller, settings):
+    def __init__(self, controller):
         """
         Init class with a screen controller and settings
         """
@@ -26,7 +25,7 @@ class Monitor(tk.Tk):
         self.setup()
         
         self.setup_controls(self.__controller__.get_controls_controller())
-        self.setup_connection(self.__controller__.get_connection_controller(), settings)
+        self.setup_connection(self.__controller__.get_connection_controller())
         self.setup_messages()
         self.setup_button_exit()
         self.setup_screen()
@@ -63,11 +62,11 @@ class Monitor(tk.Tk):
         self.__controls__ = Controls(self, controls_controller)
         self.__controls__.grid(row=2, column=0, rowspan=2, columnspan=2, padx=5, pady=5, sticky='new')
 
-    def setup_connection(self, connection_controller, settings):
+    def setup_connection(self, connection_controller):
         """
         Method to setup connection on the main window
         """
-        self.__connection__ = Connection(self, connection_controller, settings)
+        self.__connection__ = Connection(self, connection_controller)
         self.__connection__.grid(row=0, column=2, rowspan=1,
                             columnspan=2, pady=5, padx=5, sticky='new')
 

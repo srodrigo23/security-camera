@@ -19,7 +19,7 @@ class Connection():
         
     def set_socket_connected(self, socket):
         """
-        Set 
+        Set socket after get connection 
         """
         self.__socket_connected__ = socket
         
@@ -41,7 +41,8 @@ class Connection():
             frame = self.__camera__.get_frame()
             if not frame is None:
                 self.send_frame(frame, 90)
-        self.__messages_controller__.show_message_control('transmission terminated')
+        self.__messages_controller__.show_message_control('Transmission Terminated')
+        print_log('i', "Frame Sent")
         
     def send_frame(self, frame, quality):
         """
@@ -53,6 +54,9 @@ class Connection():
         data = pickle.dumps(image, 0)
         if self.is_connected():
             self.__socket_connected__.sendall(struct.pack(">L", len(data)) + data) # envio del frame
+            self.__messages_controller__.show_message_control(
+                Frame Sent')
+            print_log('i', "Frame Sent")
         
         
     def is_connected(self):

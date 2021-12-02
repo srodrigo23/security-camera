@@ -1,23 +1,25 @@
 import tkinter as tk
+import settings as s
 
 from tkinter import LabelFrame, Label, messagebox
 from tkinter.ttk import Button, Entry
+import settings as s
 
 class Connection(LabelFrame):
     """
     Connection class view to show connection info
     """
     
-    def __init__(self, parent, controller, settings):
+    def __init__(self, parent, controller):
         """
         Method to init connection receive parent, controller settings
         """
         tk.LabelFrame.__init__(self, parent)
         self.__title__ = 'Connection'
         self.__controller__ = controller
-        self.setup_connection(settings)
+        self.setup_connection()
 
-    def setup_connection(self, settings):
+    def setup_connection(self):
         """
         Method to setup connection view on the screen with settings info
         """
@@ -29,9 +31,9 @@ class Connection(LabelFrame):
         __lbl_port__ = Label(self, text='Port :')
         
         self.__ent_ip__ = Entry(self, width=15)
-        self.__ent_ip__.insert(0, settings.get_host())
+        self.__ent_ip__.insert(0, s.get_host())
         self.__ent_port__ = Entry(self, width=15)
-        self.__ent_port__.insert(0, settings.get_port())
+        self.__ent_port__.insert(0, s.get_port())
         
         __lbl_ip__.grid(row=0, column=0, padx=2, pady=2, sticky='e')
         __lbl_port__.grid(row=1, column=0, padx=2, pady=2, sticky='e')
