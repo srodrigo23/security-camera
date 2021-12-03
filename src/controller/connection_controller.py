@@ -9,7 +9,6 @@ class ConnectionController():
     """
     Connection Controller class to control view and conection with the server
     """
-    
     def __init__(self, connection, messages_controller):
         """
         Init class t do the connection and show info on the screen

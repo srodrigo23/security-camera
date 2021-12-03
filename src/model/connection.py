@@ -54,10 +54,8 @@ class Connection():
         data = pickle.dumps(image, 0)
         if self.is_connected():
             self.__socket_connected__.sendall(struct.pack(">L", len(data)) + data) # envio del frame
-            self.__messages_controller__.show_message_control(
-                Frame Sent')
+            self.__messages_controller__.show_message_control('Frame Sent')
             print_log('i', "Frame Sent")
-        
         
     def is_connected(self):
         """
