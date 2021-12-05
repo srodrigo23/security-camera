@@ -9,14 +9,14 @@ class Camera():
         """
         self.__cam__ = None
     
-    def set_webcam(self, src=0, size=(320, 240)):
+    def set_webcam(self, src=0):
         """
-        Set source from WebCamera or Laptop Camera
+        Set source from WebCamera or Laptop Camera, size=(320, 240)
         """
         from .web_camera import WebCamera
-        self.__cam__ = WebCamera(src, size, self)
+        self.__cam__ = WebCamera(src, self)
         
-    def set_picam(self, resolution=(320, 240), framerate=32):
+    def set_picam(self, resolution=(1920, 1080), framerate=30):
         """
         Set source from PiCamera
         """
@@ -37,9 +37,12 @@ class Camera():
     
     def get_frame(self):
         """
-        Return frame stored in a queue
+        Return frame stored in a variable
         """
-        return self.__cam__.get_frame()
+        if self.__cam__ is not None:
+            return self.__cam__.get_frame()
+        else:
+            return None
     
     def stop(self):
         """

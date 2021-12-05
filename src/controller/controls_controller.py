@@ -5,7 +5,7 @@ class ControlsController():
     """
     All bussines logic of controls of screen, start video, start camera
     """
-    def __init__(self, camera, screen_controller):
+    def __init__(self, camera, screen_controller, connection_controller):
         """
         MVC Pattern view none to set after
         """
@@ -13,6 +13,7 @@ class ControlsController():
         self.__camera__ = camera # to control camera stop/play
         self.__screen_controller__ = screen_controller # to change screen start and end execution
         self.__path_system__ = os.path.abspath('.') # path system to read videos
+        self.__connection_controller__ = connection_controller
     
     def set_view(self, view):
         # to control frame controls
@@ -38,6 +39,7 @@ class ControlsController():
             self.__controls_view__.enable_cbx_video_source()
             print_log('i', "Turning-off Webcamera")
             self.__controls_view__.set_label_btn_webcamera('Start WebCamera')
+            self.__connection_controller__.disconnect_to_server()
     
     def launch_picamera(self):
         """
@@ -65,6 +67,7 @@ class ControlsController():
             self.__controls_view__.enable_cbx_video_source()
             print_log('i', "Turning-off WebCamera")
             self.__controls_view__.set_label_btn_picamera('Start PiCamera')
+            self.__connection_controller__.disconnect_to_server()
 
             
     def launch_video(self, video_selected):

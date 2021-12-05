@@ -1,5 +1,5 @@
 import logging
-import datetime
+from util.date import get_current_time_string
 
 logging.basicConfig(
     filename='system.log',
@@ -11,7 +11,7 @@ def print_log(level, message):
     """
     Method to print messages from system
     """
-    d = datetime.datetime.now()
+    d = get_current_time_string()
     if level == 'd':  # debug
         logging.debug(message)
     elif level == 'i':  # info

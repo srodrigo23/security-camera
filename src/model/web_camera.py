@@ -13,19 +13,14 @@ else:
 
 class WebCamera():
     
-    def __init__(self, src, size, interface):
+    def __init__(self, src, interface):
         """
             Constructor to webcamera with resolution
         """
         self.__src__ = src
-        self.__size__ = size
-        
         self.__interface__ = interface
-        
-        # self.__frames_queue__ = Queue(maxsize=128)
         self.__frame__ = None
         self.__stopped__ = False
-        # self.__working__ = False
             
     def start(self): 
         """
@@ -36,12 +31,6 @@ class WebCamera():
         self.__thread__.start()
         self.__working__ = True
         
-    def rescale_frame(self, frame):
-        """
-            Method to resize a frame from original size about percent size
-        """
-        return cv2.resize(frame, self.__size__, interpolation=cv2.INTER_AREA)
-    
     def catch_frames(self):
         """
             Method to catch frames in 2 ways
@@ -54,11 +43,8 @@ class WebCamera():
             __ret__, __frame__ = self.__feed__.read()
             if __ret__:
                 time.sleep(1/self.__fps__)
-                __frame__ = self.rescale_frame(__frame__)
                 self.__frame__ = cv2.cvtColor(__frame__, cv2.COLOR_BGR2RGB)
-                # self.__frames_queue__.put(__frame__)
-            else:    
-                # self.stop()
+            else:
                 self.__interface__.stop()
         self.close()
     
@@ -66,12 +52,11 @@ class WebCamera():
         """
             Method to return a frame from webcam queue
         """
-        # return self.__frames_queue__.get()
         return self.__frame__
     
     def is_more(self):
         """
-            Method to know if there are more frames
+            Method not used
         """
         return self.__frames_queue__.qsize() > 0
 
@@ -80,10 +65,6 @@ class WebCamera():
             Method to stop catch frames
         """
         self.__stopped__ = True
-        # self.__working__ = False
-    
-    # def get_status_working(self):
-    #     return self.__working__    
     
     def close(self):
         self.__feed__.release()

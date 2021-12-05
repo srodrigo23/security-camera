@@ -23,7 +23,7 @@ class Controller():
         #Connecction controller, screen controller, controls controller
         self.__connection_controller__ = ConnectionController(self.__connection__, self.__messages_controller__)
         self.__screen_controller__     = ScreenController(self.__camera__)
-        self.__controls_controller__   = ControlsController(self.__camera__, self.__screen_controller__)
+        self.__controls_controller__   = ControlsController(self.__camera__, self.__screen_controller__, self.__connection_controller__)
         # to something
         self.__screen_controller__.set_controls_controller(self.__controls_controller__)
         

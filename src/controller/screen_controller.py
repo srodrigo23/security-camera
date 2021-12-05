@@ -1,5 +1,6 @@
 from threading import Thread
 
+import cv2
 import time
 
 class ScreenController():
@@ -30,6 +31,12 @@ class ScreenController():
         self.__thread__ = Thread(target=self.show_frames, args=())
         self.__thread__.daemon = True
         self.__thread__.start()
+        
+    def rescale_frame(self, size, frame):
+        """
+            Method to resize a frame from original size about percent size
+        """
+        return cv2.resize(frame, size, interpolation=cv2.INTER_AREA)
     
     def show_frames(self):
         """
@@ -40,6 +47,7 @@ class ScreenController():
             if not self.__camera__.is_none():
                 frame = self.__camera__.get_frame()
                 if not frame is None:
+                    frame = self.rescale_frame((320, 240), frame)
                     self.__screen_view__.show_frame(frame) # show frame in screen
             else:
                 break

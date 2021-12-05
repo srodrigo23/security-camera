@@ -23,6 +23,11 @@ class ConnectionController():
         MVC pattern to set control view
         """
         self.__connection_view__ = view
+        
+    def disconnect_to_server(self):
+        self.__socket__ = None
+        self.__connection__.set_socket_connected(self.__socket__)
+        self.enable_controls()  # to disconnect to the server
     
     def connect_to_server(self):
         """
@@ -30,9 +35,7 @@ class ConnectionController():
         """
         if self.__connection__.check_camera_is_ready():  # only with video working
             if self.__connection__.is_connected():
-                self.__socket__ = None
-                self.__connection__.set_socket_connected(self.__socket__)
-                self.enable_controls()  # to disconnect to the server
+                self.disconnect_to_server()
             else:
                 __host__, __port__ = self.__connection_view__.get_connection_info()
                 if self.validate_host_address(__host__) and self.validate_port(__port__):
