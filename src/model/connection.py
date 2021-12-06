@@ -32,6 +32,12 @@ class Connection():
             __connection__ = Thread(target=self.send_frames, args=())
             __connection__.daemon = True
             __connection__.start()
+    
+    def set_controller_connection(self, controller):
+        """
+        Method to interacts to the controller
+        """
+        self.__controller__ = controller
             
     def send_frames(self):
         """
@@ -57,8 +63,17 @@ class Connection():
         result, image = cv2.imencode('.jpg', frame, encode_param)
         data = pickle.dumps(image, 0)
         if self.is_connected():
-            self.__socket_connected__.sendall(struct.pack(">L", len(data)) + data) # envio del frame
-            self.__messages_controller__.show_message_control(f'Frame Sent {self.__frames_counter__}')
+            try:
+                self.__socket_connected__.sendall(struct.pack(
+                    ">L", len(data)) + data)  # envio del frame
+            except socket.error:
+                self.__controller__.disconnect_to_server()
+                print_log('i', "Connection interrupted")
+                self.__messages_controller__.show_message_control(
+                    "Connection interrupted")
+            else:
+                self.__messages_controller__.show_message_control(
+                    f'Frame Sent {self.__frames_counter__}')    
         
     def is_connected(self):
         """

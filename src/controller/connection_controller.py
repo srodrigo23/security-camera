@@ -17,6 +17,7 @@ class ConnectionController():
         self.__connection__ = connection
         self.__messages_controller__ = messages_controller
         self.__socket__ = None
+        self.__connection__.set_controller_connection(self)
         
     def set_view(self, view):
         """
