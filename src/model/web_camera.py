@@ -36,13 +36,13 @@ class WebCamera():
             Method to catch frames in 2 ways
         """
         self.__feed__ = cv2.VideoCapture(self.__src__)
-        self.__fps__ = int(self.__feed__.get(cv2.CAP_PROP_FPS))
+        # self.__fps__ = int(self.__feed__.get(cv2.CAP_PROP_FPS))
         if self.__src__ == 0 : time.sleep(2.0)  # to charge the camera
         
         while not self.__stopped__:
             __ret__, __frame__ = self.__feed__.read()
             if __ret__:
-                time.sleep(1/self.__fps__)
+                # time.sleep(1/self.__fps__)
                 self.__frame__ = cv2.cvtColor(__frame__, cv2.COLOR_BGR2RGB)
             else:
                 self.__interface__.stop()
