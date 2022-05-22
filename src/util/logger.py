@@ -2,7 +2,7 @@ import logging
 from util.date import get_current_time_string
 
 logging.basicConfig(
-    filename='system.log',
+    filename='../system.log',
     format='%(process)d %(asctime)s %(levelname)s : %(message)s', 
     level=logging.DEBUG, 
     datefmt='%m/%d/%Y %I:%M:%S %p')

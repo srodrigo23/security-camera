@@ -5,3 +5,4 @@ __pycache__
 *.pyc
 video
 system.log
+config.ini
