@@ -16,7 +16,7 @@ class Monitor(tk.Tk):
         Init class with a screen controller and settings
         """
         super().__init__()
-        self.__width__ = 560
+        self.__width__ = 584
         self.__height__ = 370
         self.__title__ = 'Node'
         self.__resizable__ = True
@@ -27,7 +27,7 @@ class Monitor(tk.Tk):
         self.setup_controls(self.__controller__.get_controls_controller())
         self.setup_connection(self.__controller__.get_connection_controller())
         self.setup_messages()
-        self.setup_button_exit()
+        self.setup_exit_menu()
         self.setup_screen()
                 
     def setup(self):
@@ -67,8 +67,7 @@ class Monitor(tk.Tk):
         Method to setup connection on the main window
         """
         self.__connection__ = Connection(self, connection_controller)
-        self.__connection__.grid(row=0, column=2, rowspan=1,
-                            columnspan=2, pady=5, padx=5, sticky='new')
+        self.__connection__.grid(row=0, column=2, rowspan=1, columnspan=2, pady=5, padx=5, sticky='new')
 
     def setup_messages(self):
         """
@@ -107,9 +106,12 @@ class Monitor(tk.Tk):
         """
         return self.__screen__
     
-    def setup_button_exit(self):
+    def setup_exit_menu(self):
         """
-        Setup on the screen button exit
+        Setup on the menubar with menu exit
         """
-        __btn_exit__ = Button(self, text='EXIT', command=self.destroy)
-        __btn_exit__.grid(row=3, column=2, rowspan=2, columnspan=2, padx=5, pady=5, sticky='news')
+        self.__menubar__ = tk.Menu(self)
+        self.config(menu=self.__menubar__)
+        file_menu = tk.Menu(self.__menubar__)
+        file_menu.add_command(label='Exit', command=self.destroy)
+        self.__menubar__.add_cascade(label='File', menu=file_menu)

@@ -14,3 +14,9 @@ def get_port():
     Method to return port from config.ini
     """
     return parser.get('connection', 'port')
+
+def get_cam_id():
+    """
+    Method to return id camera from config.ini
+    """
+    return parser.get('connection', 'cam_id')
