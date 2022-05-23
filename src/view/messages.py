@@ -5,7 +5,6 @@ import time
 
 from tkinter import LabelFrame, Listbox
 
-
 class Messages(LabelFrame):
     """
     Class Messages extends from LabelFrame

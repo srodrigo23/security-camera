@@ -1,5 +1,4 @@
-# Foobar
-
+# CAMERA - Video Survellance Project
 Foobar is a Python library for dealing with word pluralization.
 
 ## Installation
