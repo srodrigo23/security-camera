@@ -1,6 +1,5 @@
 import datetime
 
-
 def get_current_time():
     """
     Method to return time dictionary
@@ -14,7 +13,6 @@ def get_current_time():
         "minute": now.minute,
         "second": now.second
     }
-
 
 def get_current_time_string():
     now = get_current_time()
