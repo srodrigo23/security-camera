@@ -46,7 +46,7 @@ class ConnectionController():
                     self.disable_controls()  # to connect to the server
                     self.__connection_view__.set_label_btn_connect('Connecting')
                     self.__connection_view__.disable_btn_connect()
-                    start_new_thread(self.attempt_connect_to_socket, (__host__, __port__, __cam_id__ 5, 0.5)) #thread!!!
+                    start_new_thread(self.attempt_connect_to_socket, (__host__, __port__, __cam_id__, 5, 0.5)) #thread!!!
                 else:
                     self.__connection_view__.show_alert_message('Ip and Port error')
         else:
