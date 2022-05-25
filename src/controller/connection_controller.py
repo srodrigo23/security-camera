@@ -26,6 +26,9 @@ class ConnectionController():
         self.__connection_view__ = view
         
     def disconnect_to_server(self):
+        """
+        Method to set to none socket communication
+        """
         self.__socket__ = None
         self.__connection__.set_socket_connected(self.__socket__)
         self.enable_controls()  # to disconnect to the server
@@ -38,18 +41,18 @@ class ConnectionController():
             if self.__connection__.is_connected():
                 self.disconnect_to_server()
             else:
-                __host__, __port__ = self.__connection_view__.get_connection_info()
+                __host__, __port__, __cam_id__ = self.__connection_view__.get_connection_info()
                 if self.validate_host_address(__host__) and self.validate_port(__port__):
                     self.disable_controls()  # to connect to the server
                     self.__connection_view__.set_label_btn_connect('Connecting')
                     self.__connection_view__.disable_btn_connect()
-                    start_new_thread(self.attempt_connect_to_socket, (__host__, __port__, 5, 0.5)) #thread!!!
+                    start_new_thread(self.attempt_connect_to_socket, (__host__, __port__, __cam_id__ 5, 0.5)) #thread!!!
                 else:
                     self.__connection_view__.show_alert_message('Ip and Port error')
         else:
             self.__connection_view__.show_alert_message("It can't transmit yet")
                                 
-    def attempt_connect_to_socket(self, host, port, num_attempts, time_delay):
+    def attempt_connect_to_socket(self, host, port, cam_id ,num_attempts, time_delay):
         """
         Method to live like a thread to attempt connect to the server
         """
@@ -75,6 +78,7 @@ class ConnectionController():
         else:
             self.disable_controls()
             self.__connection__.set_socket_connected(self.__socket__)
+            self.__connection__.set_camera_id(cam_id)
             self.__connection__.run_send_frames() # start to send frames
             
     def enable_controls(self):
@@ -85,6 +89,7 @@ class ConnectionController():
         self.__connection_view__.enable_btn_connect()
         self.__connection_view__.enable_ent_ip()
         self.__connection_view__.enable_ent_port()
+        self.__connection_view__.enable_ent_cam_id()
     
     def disable_controls(self):
         """
@@ -94,12 +99,13 @@ class ConnectionController():
         self.__connection_view__.enable_btn_connect()
         self.__connection_view__.disable_ent_ip()
         self.__connection_view__.disable_ent_port()
+        self.__connection_view__.disable_ent_cam_id()
 
     def validate_host_address(self, address):
         """
         Method to test host to connect to the server
         """
-        if not address is None:
+        if address is not None:
             __parts__ = address.split(".")    
             if len(__parts__) != 4:
                 return False

@@ -23,6 +23,12 @@ class Connection():
         Set socket after get connection 
         """
         self.__socket_connected__ = socket
+    
+    def set_camera_id(self, cam_id):
+        """
+        Set camera id
+        """
+        self.__cam_id__ = cam_id
         
     def run_send_frames(self):
         """
@@ -42,11 +48,12 @@ class Connection():
     def send_frames(self):
         """
         Method to send frames while the message is live
-        """        
+        """
+        self.send_camera_id() #sending id camera
         while self.is_connected() and not self.__camera__.is_none():
             time.sleep(0.1)
             frame = self.__camera__.get_frame()
-            if not frame is None:
+            if frame is not None:
                 self.send_frame(frame, 90)
                 self.__frames_counter__ += 1
                 print_log('i', f"Frame Sent {self.__frames_counter__}")
@@ -73,13 +80,22 @@ class Connection():
                     "Connection interrupted")
             else:
                 self.__messages_controller__.show_message_control(
-                    f'Frame Sent {self.__frames_counter__}')    
+                    f'Frame Sent {self.__frames_counter__}')
+    
+    def send_camera_id(self):
+        """
+        Method to send an Id like a string
+        """
+        self.__socket_connected__.send(self.__cam_id__.encode())
         
     def is_connected(self):
         """
         Check if this node is connected
         """
-        return not self.__socket_connected__ is None
+        return self.__socket_connected__ is not None
     
     def check_camera_is_ready(self):
+        """
+        Method to check is the camera not is None to get frames is not ready.
+        """
         return not self.__camera__.is_none()

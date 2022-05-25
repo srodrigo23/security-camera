@@ -85,6 +85,18 @@ class Connection(LabelFrame):
         """
         self.__ent_port__.config(state='disable')
 
+    def enable_ent_cam_id(self):
+        """
+        Method to enable input ip
+        """
+        self.__ent_cam_id__.config(state='normal')
+
+    def disable_ent_cam_id(self):
+        """
+        Method to disable input ip
+        """
+        self.__ent_cam_id__.config(state='disable')
+
     def enable_btn_connect(self):
         """
         Method to enable button connect
@@ -107,7 +119,9 @@ class Connection(LabelFrame):
         """
         Method to get connection info on the screen
         """
-        return (None if self.__ent_ip__.get() == '' else self.__ent_ip__.get(), None if self.__ent_port__.get() == '' else self.__ent_port__.get())
+        return (None if self.__ent_ip__.get() == '' else self.__ent_ip__.get(), 
+                None if self.__ent_port__.get() == '' else self.__ent_port__.get(),
+                None if self.__ent_cam_id__.get() == '' else self.__ent_cam_id__.get())
     
     def show_alert_message(self, text):
         """
