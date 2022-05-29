@@ -6,22 +6,16 @@ import time
 from tkinter import LabelFrame, Listbox
 
 class Messages(LabelFrame):
-    """
-    Class Messages extends from LabelFrame
-    """
+    """ Class Messages extends from LabelFrame. """
     def __init__(self, parent):
-        """
-        Method to init Messages View class
-        """
+        """ Method to init Messages View class """
         tk.LabelFrame.__init__(self, parent)
         self.__title__ = "Messages"
         self.__cnt_elements__ = 0
         self.setup_messages()
     
     def setup_messages(self):
-        """
-        Method to setup view components on the screen
-        """
+        """ Method to setup view components on the screen. """
         self.config(text=self.__title__)
         
         __scroll_bar__ = Scrollbar(self, orient='vertical')
@@ -38,9 +32,7 @@ class Messages(LabelFrame):
         self.__lst_messages__.pack(expand=0, fill='x', padx=1)
     
     def add_message(self, text):
-        """
-        Method to add a text in list to show message
-        """
+        """ Method to add a text in list to show message. """
         # if self.__cnt_elements__ % 10 == 0:
         #     self.__lst_messages__.delete(0, 'end')
         self.__lst_messages__.insert('end', text)

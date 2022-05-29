@@ -9,21 +9,19 @@ from model.connection import Connection
 class Controller():
     
     def __init__(self):
-        """
-        Init to object controller, view first is None to set after
-        """
+        """ Init to object controller, view first is None to set after """
         self.__view__ =  None
     
-        #MessagesController Object
-        self.__messages_controller__   = MessagesController()
-        #Camera Object
+        # MessagesController Object
+        self.__messages_controller__ = MessagesController()
+        # Camera Object
         self.__camera__ = Camera()
-        #Connection Object, with camera ref and messagescontroller ref
+        # Connection Object, with camera ref and messagescontroller ref
         self.__connection__ = Connection(camera=self.__camera__, messages=self.__messages_controller__)
         #Connecction controller, screen controller, controls controller
         self.__connection_controller__ = ConnectionController(self.__connection__, self.__messages_controller__)
-        self.__screen_controller__     = ScreenController(self.__camera__)
-        self.__controls_controller__   = ControlsController(self.__camera__, self.__screen_controller__, self.__connection_controller__)
+        self.__screen_controller__ = ScreenController(self.__camera__)
+        self.__controls_controller__ = ControlsController(self.__camera__, self.__screen_controller__, self.__connection_controller__)
         # to something
         self.__screen_controller__.set_controls_controller(self.__controls_controller__)
         

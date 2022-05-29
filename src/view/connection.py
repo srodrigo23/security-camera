@@ -6,23 +6,17 @@ from tkinter.ttk import Button, Entry
 import settings as s
 
 class Connection(LabelFrame):
-    """
-    Connection class view to show connection info
-    """
+    """ Connection class view to show connection info """
     
     def __init__(self, parent, controller):
-        """
-        Method to init connection receive parent, controller settings
-        """
+        """ Method to init connection receive parent, controller settings """
         tk.LabelFrame.__init__(self, parent)
         self.__title__ = 'Connection'
         self.__controller__ = controller
         self.setup_connection()
 
     def setup_connection(self):
-        """
-        Method to setup connection view on the screen with settings info
-        """
+        """ Method to setup connection view on the screen with settings info """
         self.config(text=self.__title__)
         self.columnconfigure(0, weight=1)
         self.columnconfigure(1, weight=1)
@@ -50,63 +44,43 @@ class Connection(LabelFrame):
         self.__btn_connect__.grid(row=3, column=0, columnspan=2, sticky='ew' )
 
     def enable_btn_connect(self):
-        """
-        Method to enable button connect
-        """
+        """ Method to enable button connect """
         self.__btn_connect__.config(state='normal')
     
     def disable_btn_connect(self):
-        """
-        Method to disable button connect
-        """
+        """ Method to disable button connect """
         self.__btn_connect__.config(state='disable')
     
     def enable_ent_ip(self):
-        """
-        Method to enable input ip
-        """
+        """ Method to enable input ip """
         self.__ent_ip__.config(state='normal')
     
     def disable_ent_ip(self):
-        """
-        Method to disable input ip
-        """
+        """ Method to disable input ip """
         self.__ent_ip__.config(state='disable')
     
     def enable_ent_port(self):
-        """
-        Method to enable input port
-        """
+        """ Method to enable input port """
         self.__ent_port__.config(state='normal')
 
     def disable_ent_port(self):
-        """
-        Method to disable input port
-        """
+        """ Method to disable input port """
         self.__ent_port__.config(state='disable')
 
     def enable_ent_cam_id(self):
-        """
-        Method to enable input ip
-        """
+        """ Method to enable input ip """
         self.__ent_cam_id__.config(state='normal')
 
     def disable_ent_cam_id(self):
-        """
-        Method to disable input ip
-        """
+        """ Method to disable input ip """
         self.__ent_cam_id__.config(state='disable')
 
     def enable_btn_connect(self):
-        """
-        Method to enable button connect
-        """
+        """ Method to enable button connect """
         self.__btn_connect__.config(state="normal")
     
     def disable_btn_connect(self):
-        """
-        Method to disable button connect
-        """
+        """ Method to disable button connect """
         self.__btn_connect__.config(state="disable")
     
     def set_label_btn_connect(self, text):

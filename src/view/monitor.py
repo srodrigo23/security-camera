@@ -8,13 +8,9 @@ from .messages import Messages
 from tkinter.ttk import Button
 
 class Monitor(tk.Tk):
-    """
-    Class to view a monitor to show frames
-    """
+    """ Class to view a monitor to show frames. """
     def __init__(self, controller):
-        """
-        Init class with a screen controller and settings
-        """
+        """ Init class with a screen controller and settings. """
         super().__init__()
         self.__width__ = 584
         self.__height__ = 370
