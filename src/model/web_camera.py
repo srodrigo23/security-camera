@@ -15,7 +15,7 @@ class WebCamera():
     
     def __init__(self, src, interface):
         """
-            Constructor to webcamera with resolution
+        Constructor to webcamera with resolution
         """
         self.__src__ = src
         self.__interface__ = interface
@@ -24,16 +24,15 @@ class WebCamera():
             
     def start(self): 
         """
-            Method to init thread webcamera
+        Method to init thread webcamera
         """
         self.__thread__ = Thread(target=self.catch_frames, args =())
         self.__thread__.daemon=True
         self.__thread__.start()
-        self.__working__ = True
         
     def catch_frames(self):
         """
-            Method to catch frames in 2 ways
+        Method to catch frames in 2 ways
         """
         self.__feed__ = cv2.VideoCapture(self.__src__)
         # self.__fps__ = int(self.__feed__.get(cv2.CAP_PROP_FPS))
@@ -50,19 +49,19 @@ class WebCamera():
     
     def get_frame(self):
         """
-            Method to return a frame from webcam queue
+        Method to return a frame from webcam queue
         """
         return self.__frame__
     
     def is_more(self):
         """
-            Method not used
+        Method not used
         """
         return self.__frames_queue__.qsize() > 0
 
     def stop(self):
         """
-            Method to stop catch frames
+        Method to stop catch frames
         """
         self.__stopped__ = True
     

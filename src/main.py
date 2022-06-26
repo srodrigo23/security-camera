@@ -3,7 +3,9 @@ from controller.controller import Controller
 from util.logger import print_log
 
 def run_camera():
-    """ Start node with command and gui interface """
+    """
+    Start node with command and gui interface
+    """
     print_log('i', "Welcome to the camera simulator")
     __controller__ = Controller()
     __monitor__ = Monitor(__controller__)
