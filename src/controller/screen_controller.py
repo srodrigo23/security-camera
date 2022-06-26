@@ -46,7 +46,7 @@ class ScreenController():
             time.sleep(0.25)
             if not self.__camera__.is_none():
                 frame = self.__camera__.get_frame()
-                if not frame is None:
+                if frame is not None:
                     frame = self.rescale_frame((320, 240), frame)
                     self.__screen_view__.show_frame(frame) # show frame in screen
             else:
