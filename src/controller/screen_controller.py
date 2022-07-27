@@ -43,8 +43,9 @@ class ScreenController():
         Infinite loop to show frames in screen 
         """
         while True:
-            time.sleep(0.25)
+            # time.sleep(1)
             if not self.__camera__.is_none():
+                time.sleep(0.25)
                 frame = self.__camera__.get_frame()
                 if frame is not None:
                     frame = self.rescale_frame((320, 240), frame)
