@@ -14,7 +14,7 @@ class Monitor(tk.Tk):
         super().__init__()
         self.__width__ = 584
         self.__height__ = 370
-        self.__title__ = 'Node'
+        self.__title__ = 'Camera Monitor'
         self.__resizable__ = True
         self.__controller__ = controller # controller
         
@@ -50,6 +50,7 @@ class Monitor(tk.Tk):
         """
         self.__screen__ = Screen(self)
         self.__screen__.grid(row=0, column=0, rowspan=2, columnspan=2, padx=5, pady=5, sticky='news')
+        self.resizable(False, False)
 
     def setup_controls(self, controls_controller):
         """

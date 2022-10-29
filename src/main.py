@@ -10,6 +10,7 @@ def run_camera():
     __controller__ = Controller()
     __monitor__ = Monitor(__controller__)
     __controller__.set_view(__monitor__)
+    # __monitor__.resizable()
     __monitor__.mainloop()
         
 if __name__ == "__main__":
