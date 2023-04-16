@@ -3,6 +3,6 @@
 __pycache__
 .DS_Store
 *.pyc
-video
+# video
 system.log
 config.ini
