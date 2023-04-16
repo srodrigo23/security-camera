@@ -40,7 +40,8 @@ class WebCamera():
         if self.__src__ == 0 : time.sleep(2.0)  # to charge the camera
         
         while not self.__stopped__:
-            time.sleep(1/self.__fps__)
+            if (self.__fps__ > 0):
+                time.sleep(1/self.__fps__)
             __ret__, __frame__ = self.__feed__.read()
             if __ret__:
                 self.__frame__ = cv2.cvtColor(__frame__, cv2.COLOR_BGR2RGB)
