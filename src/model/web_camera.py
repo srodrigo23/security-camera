@@ -45,7 +45,8 @@ class WebCamera():
             if __ret__:
                 self.__frame__ = cv2.cvtColor(__frame__, cv2.COLOR_BGR2RGB)
             else:
-                self.__interface__.stop()
+                # self.__interface__.stop()
+                self.__feed__ = cv2.VideoCapture(self.__src__)
         self.close()
     
     def get_frame(self):
