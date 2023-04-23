@@ -36,7 +36,7 @@ class WebCamera():
         """
         self.__feed__ = cv2.VideoCapture(self.__src__)
         self.__fps__ = int(self.__feed__.get(cv2.CAP_PROP_FPS))
-        print(f"fps: {self.__fps__}")
+        # print(f"fps: {self.__fps__}")
         if self.__src__ == 0 : time.sleep(2.0)  # to charge the camera
         
         while not self.__stopped__:
