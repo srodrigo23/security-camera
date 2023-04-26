@@ -102,7 +102,8 @@ class ConnectionController():
 
     def validate_port(self, port):
         """ Method to test port to connect to the server. """
-        if not isinstance(int(port), int):
+        # if not isinstance(int(port), int):
+        if not port.isnumeric():
             return False
         else:
-            return 1 <= int(port) <= 65535
+            return 49152 <= int(port) <= 65535  #only beetwen values
